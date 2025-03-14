@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScene.unity
     guid: 2c51a0a503c342f4eb370cf198f527cf
   - enabled: 1
-    path: Assets/Scenes/TabernaScene.unity
-    guid: fa114bc3541da8643a6861f456b15c46
+    path: Assets/Scenes/Taberna Scene.unity
+    guid: 04a0febc56f66564fa81973085b22489
   - enabled: 1
     path: Assets/Scenes/DecisionScene.unity
     guid: 75721da49e422cb47945c9b3fc809905
