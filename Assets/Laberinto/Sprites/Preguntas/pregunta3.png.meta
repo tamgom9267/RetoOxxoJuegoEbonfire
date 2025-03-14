@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fe4a841a97719864b8616d3799814926
+guid: 4c74d0ccac66ba84faf9ab3fa5f84a45
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4956072100158078540
-    second: laberintojugador_0
+      213: -251977806782723505
+    second: pregunta3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: laberintojugador_0
+      name: pregunta3_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 8
-        width: 18
-        height: 19
+        x: 0
+        y: 2
+        width: 100
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4e7523115187c440800000000000000
-      internalID: 4956072100158078540
+      spriteID: f4a0f6f058bc08cf0800000000000000
+      internalID: -251977806782723505
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      laberintojugador_0: 4956072100158078540
+      pregunta3_0: -251977806782723505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
