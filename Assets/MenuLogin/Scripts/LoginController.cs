@@ -15,7 +15,7 @@ public class LoginController : MonoBehaviour
 
     public void GoToTaberna()
     {
-        SceneManager.LoadScene("TabernaScene");
+        SceneManager.LoadScene("Taberna Scene");
     }
 
     public void GoToDecision()
