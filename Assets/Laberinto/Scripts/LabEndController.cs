@@ -1,16 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LabUIController : MonoBehaviour
+public class LabEndController : MonoBehaviour
 {
     public void GoToMenu()
     {
         SceneManager.LoadScene("MenuScene");
     }
 
-    public void GoToWinScreen()
+    public void GoToLab()
     {
-        SceneManager.LoadScene("LaberintoFin");
+        SceneManager.LoadScene("LaberintoScene");
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
