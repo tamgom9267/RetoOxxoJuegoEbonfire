@@ -9,6 +9,15 @@ public class NewMonoBehaviourScript : MonoBehaviour
         SceneManager.LoadScene("MenuScene");
     }
 
+    public void GoBack()
+    {
+        SceneManager.LoadScene("DecisionScene");
+    }
+
+    public void LoadGame()
+    {
+        SceneManager.LoadScene("GameSceneDecision");
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
