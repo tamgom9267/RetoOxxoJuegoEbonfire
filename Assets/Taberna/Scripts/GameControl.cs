@@ -31,6 +31,10 @@ public class GameControl : MonoBehaviour
         SceneManager.LoadScene("MenuScene");
     }
 
+    public void goBattle() {
+        SceneManager.LoadScene("Battlefield");
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
