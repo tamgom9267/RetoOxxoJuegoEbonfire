@@ -817,7 +817,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7762350047352875558, guid: 703fbcd783af1704189599bbc602ee92, type: 3}
+  m_Sprite: {fileID: -2769964262154442518, guid: 38a7548bcea01e540b9e8244a265580d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1825,7 +1825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6208176927266180224, guid: 0a3192441c4704f4588cab0402c4e2a0, type: 3}
+  m_Sprite: {fileID: 1082304540512218218, guid: b45a884adec91d449919cdb04fdf9461, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1900,7 +1900,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3337038689812066966, guid: fda0bd9784ab6814bbc934097b8b5a01, type: 3}
+  m_Sprite: {fileID: -1749391900817461002, guid: 12410c5c435ce8148ae38423628a4fbc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4845,7 +4845,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7886631795410796208, guid: 046b42f28bebd6f4a92dd1a0a130c8b3, type: 3}
+  m_Sprite: {fileID: 5577818362917003398, guid: c07b094dce3d7834ca225dee29856d9e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4920,7 +4920,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3337038689812066966, guid: fda0bd9784ab6814bbc934097b8b5a01, type: 3}
+  m_Sprite: {fileID: -1749391900817461002, guid: 12410c5c435ce8148ae38423628a4fbc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5269,7 +5269,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1841979302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01e5c80e4e93787488db4815b9c15bc8, type: 3}
+  m_Script: {fileID: 11500000, guid: c30d317fd9e4a264c93d3b3a6e0c797e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1841979302}
@@ -5288,7 +5288,7 @@ GameObject:
   - component: {fileID: 1956874438}
   - component: {fileID: 1956874437}
   m_Layer: 5
-  m_Name: EXIT
+  m_Name: SETTINGS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5622,7 +5622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3337038689812066966, guid: fda0bd9784ab6814bbc934097b8b5a01, type: 3}
+  m_Sprite: {fileID: -1749391900817461002, guid: 12410c5c435ce8148ae38423628a4fbc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
