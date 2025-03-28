@@ -4775,7 +4775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2055102312182832480, guid: f681a54372d73d74785b9c9d4ac477e8, type: 3}
       propertyPath: m_SortingLayerID
-      value: -2025235935
+      value: -881900901
       objectReference: {fileID: 0}
     - target: {fileID: 2444991506894079395, guid: f681a54372d73d74785b9c9d4ac477e8, type: 3}
       propertyPath: m_SortingLayer
@@ -4783,7 +4783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2444991506894079395, guid: f681a54372d73d74785b9c9d4ac477e8, type: 3}
       propertyPath: m_SortingLayerID
-      value: 824389847
+      value: 2069097215
       objectReference: {fileID: 0}
     - target: {fileID: 4370152849212869299, guid: f681a54372d73d74785b9c9d4ac477e8, type: 3}
       propertyPath: m_SortingLayer
@@ -4791,7 +4791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4370152849212869299, guid: f681a54372d73d74785b9c9d4ac477e8, type: 3}
       propertyPath: m_SortingLayerID
-      value: -2025235935
+      value: -881900901
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
