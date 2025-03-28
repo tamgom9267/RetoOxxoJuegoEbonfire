@@ -1598,7 +1598,65 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sprite_sheet (2)_0: -5211964216910868256
+      sprite_sheet (2)_1: -9043191669338126048
+      sprite_sheet (2)_10: -3203553036358323190
+      sprite_sheet (2)_11: 579182015868293358
+      sprite_sheet (2)_12: -7629620177172686730
+      sprite_sheet (2)_13: 3031013153162378208
+      sprite_sheet (2)_14: -8263487981818039543
+      sprite_sheet (2)_15: 7471210401906818526
+      sprite_sheet (2)_16: 3630144521175208664
+      sprite_sheet (2)_17: -3104169297886213881
+      sprite_sheet (2)_18: 3400215649343812394
+      sprite_sheet (2)_19: 4828358283173581972
+      sprite_sheet (2)_2: 1201776419199054647
+      sprite_sheet (2)_20: 1082069699930294832
+      sprite_sheet (2)_21: 7140030119988605395
+      sprite_sheet (2)_22: 1530661779942045073
+      sprite_sheet (2)_23: -5223157236617431121
+      sprite_sheet (2)_24: -4284877130692598914
+      sprite_sheet (2)_25: -3992032680654466589
+      sprite_sheet (2)_26: -6920171381097456951
+      sprite_sheet (2)_27: -4138843359573697665
+      sprite_sheet (2)_28: 4319167415829623187
+      sprite_sheet (2)_29: 7969624207131987896
+      sprite_sheet (2)_3: -8627711553287832699
+      sprite_sheet (2)_30: 6622513095692798849
+      sprite_sheet (2)_31: -2002693461597841163
+      sprite_sheet (2)_32: -8552231506216850083
+      sprite_sheet (2)_33: -37463244137193490
+      sprite_sheet (2)_34: -4199050256276055573
+      sprite_sheet (2)_35: -3844328176883557759
+      sprite_sheet (2)_36: -280495411636496320
+      sprite_sheet (2)_37: -1131046486918918613
+      sprite_sheet (2)_38: 4945873634572101982
+      sprite_sheet (2)_39: -6318619995557379361
+      sprite_sheet (2)_4: 6484565600515516487
+      sprite_sheet (2)_40: 5180138135973720954
+      sprite_sheet (2)_41: -243472349160134056
+      sprite_sheet (2)_42: 57055237290886847
+      sprite_sheet (2)_43: -6072544756929418536
+      sprite_sheet (2)_44: -9030879659266356221
+      sprite_sheet (2)_45: -2029318356729382779
+      sprite_sheet (2)_46: -1803520905268530840
+      sprite_sheet (2)_47: -1658245348691533110
+      sprite_sheet (2)_48: 9023963138202943387
+      sprite_sheet (2)_49: -4553886859397609602
+      sprite_sheet (2)_5: 4152494087350656637
+      sprite_sheet (2)_50: 6755657915862413447
+      sprite_sheet (2)_51: 8796926035867175305
+      sprite_sheet (2)_52: 1840047523066339035
+      sprite_sheet (2)_53: 6615405277436271732
+      sprite_sheet (2)_54: -7922674811605640605
+      sprite_sheet (2)_55: 7118532636296295643
+      sprite_sheet (2)_56: 4301078686694942723
+      sprite_sheet (2)_57: -6183623971588390750
+      sprite_sheet (2)_6: 7805699190303774473
+      sprite_sheet (2)_7: 252025337909216907
+      sprite_sheet (2)_8: -7665905149996672245
+      sprite_sheet (2)_9: 977372705748724821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
