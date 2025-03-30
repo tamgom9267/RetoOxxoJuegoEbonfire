@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      VecteezyFlame_0: -1749391900817461002
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
