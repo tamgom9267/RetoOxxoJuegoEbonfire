@@ -19,6 +19,16 @@ public class NewMonoBehaviourScript : MonoBehaviour
         SceneManager.LoadScene("GameSceneDecision");
     }
 
+    public void LoadStore()
+    {
+        SceneManager.LoadScene("StoreDecision");
+    }
+
+    public void LoadInventario()
+    {
+        SceneManager.LoadScene("InventarioScene");
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
