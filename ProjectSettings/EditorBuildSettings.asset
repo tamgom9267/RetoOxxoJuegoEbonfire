@@ -29,6 +29,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StoreDecision.unity
     guid: 9852cc44d44ae92419e2901fa3bb7939
+  - enabled: 1
+    path: Assets/Scenes/LaberintoFin.unity
+    guid: e1391744b4e2e6046a564f194389f73d
+  - enabled: 1
+    path: Assets/Scenes/Battlefield.unity
+    guid: bb7c3b408b4cf3c48b5d4de01a8a8590
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
