@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class OxxoBehaviour : MonoBehaviour
 {
+    [SerializeField] Debriefing debriefing;
     [SerializeField] GameObject infOxxo;
     [SerializeField] GameObject pointer;
+    [SerializeField] int oxxoID;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +23,7 @@ public class OxxoBehaviour : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player") && pointer.activeSelf) {
             infOxxo.SetActive(true);
+            debriefing.SetCurrentOxxoID(oxxoID);
         }
     }
 }
