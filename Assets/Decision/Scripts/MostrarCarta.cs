@@ -3,36 +3,24 @@ using UnityEngine.UI;
 
 public class MostrarCarta : MonoBehaviour
 {
-    public GameObject imagen1;
-    public GameObject imagen2;
-    public GameObject imagen3;
+    public GameObject textPanel; // Panel que contiene el texto
+    public Text descriptionText; // Componente Text para mostrar el texto
 
-    public void MostrarOcultarImagen()
-    {
-        imagen1.SetActive(!imagen1.activeSelf);
-    }
-
-    public void MostrarOcultarImagen2()
-    {
-        imagen2.SetActive(!imagen2.activeSelf);
-    }
-
-    public void MostrarOcultarImagen3()
-    {
-        imagen3.SetActive(!imagen3.activeSelf);
-    }
-
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        // Ocultamos el panel de texto al inicio
+        textPanel.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnCardClick()
     {
+        // Alternar la visibilidad del panel
+        textPanel.SetActive(!textPanel.activeSelf);
         
+        if(textPanel.activeSelf)
+        {
+            // Solo actualizar el texto si el panel se está mostrando
+            descriptionText.text = "Descripción de la carta ";
+        }
     }
 }

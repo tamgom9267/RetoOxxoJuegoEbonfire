@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Purwanto_NounProject_0: -3747456038159301806
+      Purwanto_NounProject_1: 3602021454577759499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
