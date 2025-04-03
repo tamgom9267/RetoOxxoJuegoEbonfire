@@ -12,7 +12,7 @@ public class UIControllD : MonoBehaviour
         time = GameControllD.Instance.timeToWin;
         UpdateTimeText();
     }
-    
+
     public void StartTimer()
     {
         StartCoroutine(TimerCountdown());

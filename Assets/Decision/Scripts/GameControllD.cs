@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GameControllD : MonoBehaviour
 {
-    public int timeToWin = 15;
+    public int timeToWin = 70;
     public static GameControllD Instance;
     public UIControllD uiController;
     

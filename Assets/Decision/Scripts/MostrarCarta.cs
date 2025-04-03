@@ -3,24 +3,82 @@ using UnityEngine.UI;
 
 public class MostrarCarta : MonoBehaviour
 {
-    public GameObject textPanel; // Panel que contiene el texto
-    public Text descriptionText; // Componente Text para mostrar el texto
+    public GameObject textPanel;
+    public Text descriptionText;
+    public Text streakText;
+    private StreakManagerD streakManager;
+    
+    private string[] textosPredefinidos = new string[]
+    {
+        "Esta es la primera descripción de la carta",
+        "Esta es la segunda descripción diferente",
+        "Una tercera descripción muy interesante",
+        "La cuarta descripción de la carta",
+        "Y esta es la quinta descripción"
+    };
+
+    private bool[] respuestasCorrectas = new bool[]
+    {
+        true,   
+        false,  
+        true,   
+        false,  
+        true    
+    };
+
+    private int indiceActual;
 
     void Start()
     {
-        // Ocultamos el panel de texto al inicio
         textPanel.SetActive(false);
+        streakManager = FindObjectOfType<StreakManagerD>();
+        
+    }
+
+    public void OnBotonVerdaderoClick()
+    {
+        VerificarRespuesta(true);
+    }
+
+    public void OnBotonFalsoClick()
+    {
+        VerificarRespuesta(false);
     }
 
     public void OnCardClick()
     {
-        // Alternar la visibilidad del panel
         textPanel.SetActive(!textPanel.activeSelf);
         
         if(textPanel.activeSelf)
         {
-            // Solo actualizar el texto si el panel se está mostrando
-            descriptionText.text = "Descripción de la carta ";
+            indiceActual = Random.Range(0, textosPredefinidos.Length);
+            descriptionText.text = textosPredefinidos[indiceActual];
+        }
+    }
+
+    private void UpdateStreakText()
+    {
+        if (streakText != null && streakManager != null)
+        {
+            streakText.text = "Racha: " + streakManager.GetCurrentStreak().ToString();
+        }
+    }
+
+    private void VerificarRespuesta(bool respuestaUsuario)
+    {
+        if(respuestaUsuario == respuestasCorrectas[indiceActual])
+        {
+            Debug.Log("¡Correcto!");
+            streakManager.IncrementStreak();
+            UpdateStreakText();
+            textPanel.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Incorrecto");
+            streakManager.ResetStreak();
+            UpdateStreakText();
+            textPanel.SetActive(false);
         }
     }
 }
