@@ -60,7 +60,8 @@ public class MostrarCarta : MonoBehaviour
     {
         if (streakText != null && streakManager != null)
         {
-            streakText.text = "Racha: " + streakManager.GetCurrentStreak().ToString();
+            streakText.text = "🔥 " + streakManager.GetCurrentStreak().ToString();
+            streakText.text = streakManager.GetCurrentStreak() >= 2 ? "🔥 " + streakManager.GetCurrentStreak().ToString() : "";
         }
     }
 

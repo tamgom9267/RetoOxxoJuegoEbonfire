@@ -7,14 +7,14 @@ using Unity.Android.Gradle.Manifest;
 
 public class StreakManagerD : MonoBehaviour
 {
-    private const string API_URL = "https://10.227.1.80:7220/Streaks";
+    private const string API_URL = "https://10.22.227.242:7220/Streaks";
     public int currentStreak;
     private string userId;
     
     void Start()
     {
         //userId = PlayerPrefs.GetString();
-        userId = "2";
+        userId = "100";
         StartCoroutine(LoadStreak());
     }
 
