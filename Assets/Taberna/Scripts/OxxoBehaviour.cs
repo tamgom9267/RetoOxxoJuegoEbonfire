@@ -69,28 +69,38 @@ public class OxxoBehaviour : MonoBehaviour
             // Activa el botón correspondiente dependiendo del oxxoID y su punto activo
             if (oxxoID == 1 && pointer1.activeSelf)
             {
+                Time.timeScale = 0f; // Pausa el tiempo
                 infOxxo.SetActive(true);
                 btnCoffe.SetActive(true);
             }
             else if (oxxoID == 2 && pointer2.activeSelf)
             {
+                Time.timeScale = 0f; // Pausa el tiempo
                 infOxxo.SetActive(true);
                 btnChocolate.SetActive(true);
             }
             else if (oxxoID == 3 && pointer3.activeSelf)
             {
+                Time.timeScale = 0f; // Pausa el tiempo
                 infOxxo.SetActive(true);
                 btnBead.SetActive(true);
             }
             else if (oxxoID == 4 && pointer4.activeSelf)
             {
+                Time.timeScale = 0f; // Pausa el tiempo
                 infOxxo.SetActive(true);
                 btnMilk.SetActive(true);
             }
             else if (oxxoID == 5 && pointer5.activeSelf)
             {
+                Time.timeScale = 0f; // Pausa el tiempo
                 infOxxo.SetActive(true);
                 btnChips.SetActive(true);
+            }
+            else
+            {
+                Time.timeScale = 0f; // Pausa el tiempo
+                infOxxo.SetActive(true);
             }
         }
     }

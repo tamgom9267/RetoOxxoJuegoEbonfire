@@ -26,48 +26,42 @@ public class ResultadoManager : MonoBehaviour
         Milk.SetActive(false);
         Chips.SetActive(false);
 
-        // Activar solo los objetos ya obtenidos
-        if (PlayerPrefs.GetInt("objeto_Coffe", 0) == 1)
-            Coffe.SetActive(true);
-
-        if (PlayerPrefs.GetInt("objeto_Chocolate_Bar", 0) == 1)
-            Chocolate_Bar.SetActive(true);
-
-        if (PlayerPrefs.GetInt("objeto_Bead", 0) == 1)
-            Bead.SetActive(true);
-
-        if (PlayerPrefs.GetInt("objeto_Milk", 0) == 1)
-            Milk.SetActive(true);
-
-        if (PlayerPrefs.GetInt("objeto_Chips", 0) == 1)
-            Chips.SetActive(true);
-    }
-
-    public void ObtenerObjeto()
-    {
         int tiendaID = PlayerPrefs.GetInt("tienda_X", -1);
 
         if (tiendaID == 1)
         {
             PlayerPrefs.SetInt("objeto_Coffe", 1);
+            Coffe.SetActive(true);
         }
         else if (tiendaID == 2)
         {
             PlayerPrefs.SetInt("objeto_Chocolate_Bar", 1);
+            Chocolate_Bar.SetActive(true);
         }
         else if (tiendaID == 3)
         {
             PlayerPrefs.SetInt("objeto_Bead", 1);
+            Bead.SetActive(true);
         }
         else if (tiendaID == 4)
         {
             PlayerPrefs.SetInt("objeto_Milk", 1);
+            Milk.SetActive(true);
         }
         else if (tiendaID == 5)
         {
             PlayerPrefs.SetInt("objeto_Chips", 1);
+            Chips.SetActive(true);
         }
+        else
+        {
+            canvasWin.SetActive(false);
+            canvasLose.SetActive(true);
+        }
+    }
 
+    public void ObtenerObjeto()
+    {
         PlayerPrefs.Save();
         SceneManager.LoadScene("Taberna Scene");
     }

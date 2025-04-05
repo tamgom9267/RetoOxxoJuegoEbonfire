@@ -18,6 +18,7 @@ public class Debriefing : MonoBehaviour
 
     public void SeleccionarCoffe()
     {
+        Time.timeScale = 1f; // Reanuda el tiempo
         PlayerPrefs.SetInt("tienda_X", 1);
         PlayerPrefs.Save();
         GameControl.Instance.goBattle();
@@ -25,6 +26,7 @@ public class Debriefing : MonoBehaviour
 
     public void SeleccionarChocolate()
     {
+        Time.timeScale = 1f; // Reanuda el tiempo
         PlayerPrefs.SetInt("tienda_X", 2);
         PlayerPrefs.Save();
         GameControl.Instance.goBattle();
@@ -32,6 +34,7 @@ public class Debriefing : MonoBehaviour
 
     public void SeleccionarBead()
     {
+        Time.timeScale = 1f; // Reanuda el tiempo
         PlayerPrefs.SetInt("tienda_X", 3);
         PlayerPrefs.Save();
         GameControl.Instance.goBattle();
@@ -39,6 +42,7 @@ public class Debriefing : MonoBehaviour
 
     public void SeleccionarMilk()
     {
+        Time.timeScale = 1f; // Reanuda el tiempo
         PlayerPrefs.SetInt("tienda_X", 4);
         PlayerPrefs.Save();
         GameControl.Instance.goBattle();
@@ -46,6 +50,7 @@ public class Debriefing : MonoBehaviour
 
     public void SeleccionarChips()
     {
+        Time.timeScale = 1f; // Reanuda el tiempo
         PlayerPrefs.SetInt("tienda_X", 5);
         PlayerPrefs.Save();
         GameControl.Instance.goBattle();
@@ -53,6 +58,7 @@ public class Debriefing : MonoBehaviour
 
 
     public void nevermind() {
+        Time.timeScale = 1f; // Reanuda el tiempo
         infOxxo.SetActive(false);
     }
 
