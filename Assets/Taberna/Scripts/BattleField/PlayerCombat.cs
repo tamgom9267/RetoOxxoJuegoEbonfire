@@ -69,38 +69,28 @@ public class PlayerCombat : MonoBehaviour
     }
     public void ReceiveAnswer(bool correct, bool isHealing, bool isHard)
     {
-        float rachaMod = StreakManager.Instance != null ? StreakManager.Instance.GetCurrentMultiplier() : 1f;
-
         if (correct)
         {
             if (isHealing)
             {
                 int healAmount = isHard ? 3 : 1;
-                int totalHeal = Mathf.RoundToInt(healAmount * rachaMod);
 
-                Debug.Log($"Curando {totalHeal} puntos de vida");
-                playerHealth?.Heal(totalHeal);
+                Debug.Log($"Curando {healAmount} puntos de vida");
+                playerHealth?.Heal(healAmount);
             }
             else
             {
-                // Ataque A: daño 1, Ataque B: daño 3
                 int baseDamage = (selectedAction == PlayerAction.AttackA) ? 1 : 3;
-                int totalDamage = Mathf.RoundToInt(baseDamage * rachaMod);
 
-                Debug.Log($"Atacando enemigo con {totalDamage} de daño");
-                if (enemyHealth != null)
-                    enemyHealth.TakeDamage(totalDamage);
+                Debug.Log($"Atacando enemigo con {baseDamage} de daño");
+                enemyHealth?.TakeDamage(baseDamage);
             }
-
-            StreakManager.Instance?.AddCorrectAnswer();
         }
         else
         {
             Debug.Log("Respuesta incorrecta. No se aplica efecto.");
-            StreakManager.Instance?.ResetStreak();
         }
 
         turnManager.EndPlayerTurn();
     }
-
 }

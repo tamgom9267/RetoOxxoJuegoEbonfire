@@ -31,10 +31,9 @@ public class TurnManager : MonoBehaviour
         currentTurn = Turn.Enemy;
         Debug.Log("Turno del enemigo");
 
-        yield return new WaitForSeconds(1.5f); // Espera antes de atacar
+        yield return new WaitForSeconds(0.5f); // Espera antes de atacar
         enemyCombat.PerformAttack();           // Ataque automático del enemigo
 
-        yield return new WaitForSeconds(1.5f); // Espera antes de regresar al jugador
-        StartPlayerTurn();
+        yield return new WaitForSeconds(0.5f); // Espera antes de regresar al jugador
     }
 }

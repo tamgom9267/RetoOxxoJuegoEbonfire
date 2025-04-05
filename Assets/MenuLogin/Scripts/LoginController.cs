@@ -15,6 +15,8 @@ public class LoginController : MonoBehaviour
 
     public void GoToTaberna()
     {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
         SceneManager.LoadScene("Taberna Scene");
     }
 

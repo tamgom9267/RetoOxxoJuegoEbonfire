@@ -1,13 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem_Enemy : MonoBehaviour
 {
-    public int maxHealth = 7;
-    public int currentHealth = 7;
+    [SerializeField] private int maxHealth = 7;
+    [SerializeField] private int currentHealth;
+    [SerializeField] private Sprite[] healthSprites;
+    [SerializeField] private SpriteRenderer healthRenderer; 
 
-    public Sprite[] healthSprites;           // 8 sprites: del lleno al vacío
-    public SpriteRenderer healthRenderer;    // SpriteRenderer del objeto de barra de vida del enemigo
-
+    [SerializeField] private HealthSystem playerHealth;
+    
     void Start()
     {
         UpdateHealthBar();
@@ -35,7 +37,14 @@ public class HealthSystem_Enemy : MonoBehaviour
     private void Die()
     {
         Debug.Log(gameObject.name + " ha muerto.");
-        // Aquí puedes reproducir una animación de muerte, desactivarlo, etc.
-        gameObject.SetActive(false); // Por ahora, lo ocultamos
+        // Animación de muerte, desactivarlo, etc.
+        
+        // Obtener la vida actual del jugador y guardarla
+        int vidaActual = playerHealth.GetCurrentHealth();
+        PlayerPrefs.SetInt("vida_jugador", vidaActual);
+
+        PlayerPrefs.SetString("resultado", "victoria");
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("Battlefield_Resultado");
     }
 }

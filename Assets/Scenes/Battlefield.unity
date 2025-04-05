@@ -3751,6 +3751,7 @@ MonoBehaviour:
   - {fileID: 1996124730058843620, guid: 6d67521c6ee993543a587e993c06cdaa, type: 3}
   - {fileID: -4831997116911646024, guid: 6d67521c6ee993543a587e993c06cdaa, type: 3}
   healthRenderer: {fileID: 1542885778}
+  playerHealth: {fileID: 1925616783}
 --- !u!4 &1298788799
 Transform:
   m_ObjectHideFlags: 0
