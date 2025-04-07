@@ -1149,7 +1149,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You Lost Please Try Again
+  m_Text: Has perdido. Por favor, intenta de nuevo.
 --- !u!222 &1069653225
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1483,7 +1483,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Well done! Item acquired.
+  m_Text: "\xA1Bien hecho! \xCDtem conseguido."
 --- !u!222 &1340188467
 CanvasRenderer:
   m_ObjectHideFlags: 0

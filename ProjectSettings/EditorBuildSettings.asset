@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Battlefield_Resultado.unity
     guid: fb62b25538e48d847abce318a4fff459
+  - enabled: 1
+    path: Assets/Scenes/Taberna_Win.unity
+    guid: fd373653c6f3e904b89a666e1582341d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
