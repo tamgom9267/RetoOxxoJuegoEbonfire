@@ -97,11 +97,6 @@ public class OxxoBehaviour : MonoBehaviour
                 infOxxo.SetActive(true);
                 btnChips.SetActive(true);
             }
-            else
-            {
-                Time.timeScale = 0f; // Pausa el tiempo
-                infOxxo.SetActive(true);
-            }
         }
     }
 }
