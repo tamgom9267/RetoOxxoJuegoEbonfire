@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OxxoBehaviour : MonoBehaviour
 {
@@ -52,6 +53,16 @@ public class OxxoBehaviour : MonoBehaviour
 
         if (PlayerPrefs.GetInt("objeto_Chips", 0) == 1)
             pointer5.SetActive(false);
+
+        // Validación de que todos los objetos han sido obtenidos
+        if (PlayerPrefs.GetInt("objeto_Coffe", 0) == 1 &&
+            PlayerPrefs.GetInt("objeto_Chocolate_Bar", 0) == 1 &&
+            PlayerPrefs.GetInt("objeto_Bead", 0) == 1 &&
+            PlayerPrefs.GetInt("objeto_Milk", 0) == 1 &&
+            PlayerPrefs.GetInt("objeto_Chips", 0) == 1)
+        {
+            SceneManager.LoadScene("Taberna_Win");
+        }
     }
 
 
