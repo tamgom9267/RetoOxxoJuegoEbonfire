@@ -32,6 +32,14 @@ public class TurnManager : MonoBehaviour
     private enum PlayerAction { None, AttackA, AttackB, Heal }
     private PlayerAction selectedAction = PlayerAction.None;
 
+    private float gameTimer = 0f;
+
+
+    void Awake()
+    {
+        gameTimer = PlayerPrefs.GetFloat("tiempo_total", 0f);
+    }
+    
     void Start()
     {
         playerHealth = PlayerPrefs.HasKey("vida_jugador") ? PlayerPrefs.GetInt("vida_jugador") : playerMaxHealth;
@@ -42,6 +50,13 @@ public class TurnManager : MonoBehaviour
 
         StartPlayerTurn();
     }
+
+    void Update()
+    {
+        gameTimer += Time.deltaTime;
+        PlayerPrefs.SetFloat("tiempo_total", gameTimer);
+    }
+
 
     // ========== TURNOS ==========
     public void StartPlayerTurn()

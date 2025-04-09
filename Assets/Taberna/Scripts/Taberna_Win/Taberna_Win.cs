@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Taberna_Win : MonoBehaviour
 {
@@ -16,5 +17,15 @@ public class Taberna_Win : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Logros()
+    {
+        SceneManager.LoadScene("Taberna_Logros");
+    }
+
+    public void GuardarYSalir()
+    {
+        SceneManager.LoadScene("MenuScene");
     }
 }

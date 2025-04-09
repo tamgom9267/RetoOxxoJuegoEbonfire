@@ -8,6 +8,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] GameObject pauseButton;
     [SerializeField] GameObject rpgStuff;
     [SerializeField] Text turnostxt;
+    [SerializeField] private Text tiempotxt;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +23,9 @@ public class PauseMenu : MonoBehaviour
         int turnos_jugador = PlayerPrefs.GetInt("turnos_jugador", 0);
 
         turnostxt.text = turnos_jugador.ToString();
+
+        float tiempo = PlayerPrefs.GetFloat("tiempo_total", 0f);
+        tiempotxt.text = $"{tiempo:F1}s";
     }
 
     public void Pause() {
