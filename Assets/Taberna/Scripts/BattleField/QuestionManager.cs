@@ -17,7 +17,7 @@ public class QuestionManager : MonoBehaviour
 
     private bool isHardQuestion;
     private Question currentQuestion;
-    private PlayerCombat playerCombat;
+    private TurnManager turnManager;
     private bool isHealing;
 
     void Start()
@@ -63,9 +63,9 @@ public class QuestionManager : MonoBehaviour
         };
     }
 
-    public void ShowQuestion(PlayerCombat player, bool useHard, bool healing = false)
+    public void ShowQuestion(TurnManager manager, bool useHard, bool healing = false)
     {
-        playerCombat = player;
+        turnManager = manager;
         isHealing = healing;
         isHardQuestion = useHard;
 
@@ -92,6 +92,6 @@ public class QuestionManager : MonoBehaviour
     {
         bool correct = index == currentQuestion.correctIndex;
         questionPanel.SetActive(false);
-        playerCombat.ReceiveAnswer(correct, isHealing, isHardQuestion);
+        turnManager.ReceiveAnswer(correct, isHealing, isHardQuestion);
     }
 }

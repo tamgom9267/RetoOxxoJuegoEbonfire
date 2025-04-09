@@ -47,4 +47,9 @@ public class HealthSystem_Enemy : MonoBehaviour
         PlayerPrefs.Save();
         SceneManager.LoadScene("Battlefield_Resultado");
     }
+
+    public bool IsDead()
+    {
+        return currentHealth <= 0;
+    }
 }

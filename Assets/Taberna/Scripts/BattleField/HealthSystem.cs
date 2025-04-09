@@ -8,6 +8,10 @@ public class HealthSystem : MonoBehaviour
     [SerializeField] private Sprite[] healthSprites;
     [SerializeField] private SpriteRenderer healthRenderer;   
 
+    [SerializeField] private Animator playerAnimator;
+    private bool isDead = false;
+
+
     void Start()
     {
         if (PlayerPrefs.HasKey("vida_jugador"))
@@ -24,16 +28,29 @@ public class HealthSystem : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        if (isDead) return;
+
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         UpdateHealthBar();
+
         if (currentHealth <= 0)
         {
+            isDead = true;
+            playerAnimator?.SetTrigger("doDeath");
+
             PlayerPrefs.SetString("resultado", "derrota");
             PlayerPrefs.Save();
-            SceneManager.LoadScene("Battlefield_Resultado");
+            StartCoroutine(LoadAfterDelay());
         }
     }
+
+    private System.Collections.IEnumerator LoadAfterDelay()
+    {
+        yield return new WaitForSeconds(0.5f); // duración de la animación
+        SceneManager.LoadScene("Battlefield_Resultado");
+    }
+
 
     public void Heal(int amount)
     {

@@ -368,8 +368,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1512748566}
-        m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+      - m_Target: {fileID: 1570186598}
+        m_TargetAssemblyTypeName: TurnManager, Assembly-CSharp
         m_MethodName: SelectAttackA
         m_Mode: 1
         m_Arguments:
@@ -2609,8 +2609,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1512748566}
-        m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+      - m_Target: {fileID: 1570186598}
+        m_TargetAssemblyTypeName: TurnManager, Assembly-CSharp
         m_MethodName: SelectHeal
         m_Mode: 1
         m_Arguments:
@@ -2896,8 +2896,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1512748566}
-        m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+      - m_Target: {fileID: 1570186598}
+        m_TargetAssemblyTypeName: TurnManager, Assembly-CSharp
         m_MethodName: SelectAttackB
         m_Mode: 1
         m_Arguments:
@@ -3033,7 +3033,6 @@ GameObject:
   - component: {fileID: 1019248616}
   - component: {fileID: 1019248615}
   - component: {fileID: 1019248617}
-  - component: {fileID: 1019248618}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -3134,20 +3133,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1019248618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019248614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d126e8e3bc78bbe408ab6724e1344f64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHealth: {fileID: 1925616783}
-  turnManager: {fileID: 1570186598}
 --- !u!1 &1039566640
 GameObject:
   m_ObjectHideFlags: 0
@@ -4737,7 +4722,6 @@ GameObject:
   - component: {fileID: 1512748564}
   - component: {fileID: 1512748563}
   - component: {fileID: 1512748565}
-  - component: {fileID: 1512748566}
   m_Layer: 0
   m_Name: FemWarrior
   m_TagString: Player
@@ -4838,23 +4822,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1512748566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1512748562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e729f6c420cfff4b8baa9493b631045, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHealth: {fileID: 1925616783}
-  enemyHealth: {fileID: 1298788798}
-  questionManager: {fileID: 270928339}
-  turnManager: {fileID: 1570186598}
-  actionPreviewText: {fileID: 1980261291}
 --- !u!1 &1525903334
 GameObject:
   m_ObjectHideFlags: 0
@@ -5152,9 +5119,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96401e756da0924fbc2598aed705207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCombat: {fileID: 1512748566}
-  enemyCombat: {fileID: 1019248618}
   currentTurn: 0
+  playerMaxHealth: 16
+  playerHealthSprites:
+  - {fileID: 5231242890530785890, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: -9115938624207856695, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: -7430669329385756642, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: -3146629568311226097, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: -156822502178163421, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: 6133340304394382675, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: -6388650513183194314, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: 2262686526604635532, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: -8872633310243311932, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: 3969346113097963169, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: -8198574232401945530, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: 7710496705314228017, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: -5321099399631716182, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: -1793167431768321461, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: -6949385356650754131, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: 6512634512270057540, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  - {fileID: 7445483725821379359, guid: 02568ea4807c6294d84b34c925067389, type: 3}
+  playerHealthRenderer: {fileID: 1399586918}
+  playerAnimator: {fileID: 1512748565}
+  actionPreviewText: {fileID: 1980261291}
+  enemyMaxHealth: 7
+  enemyHealthSprites:
+  - {fileID: 941011508473296331, guid: 6d67521c6ee993543a587e993c06cdaa, type: 3}
+  - {fileID: -3456209596567313718, guid: 6d67521c6ee993543a587e993c06cdaa, type: 3}
+  - {fileID: -2314676943549235514, guid: 6d67521c6ee993543a587e993c06cdaa, type: 3}
+  - {fileID: 5034127026241225188, guid: 6d67521c6ee993543a587e993c06cdaa, type: 3}
+  - {fileID: 5486026363670121458, guid: 6d67521c6ee993543a587e993c06cdaa, type: 3}
+  - {fileID: -5679704251215048136, guid: 6d67521c6ee993543a587e993c06cdaa, type: 3}
+  - {fileID: 1996124730058843620, guid: 6d67521c6ee993543a587e993c06cdaa, type: 3}
+  - {fileID: -4831997116911646024, guid: 6d67521c6ee993543a587e993c06cdaa, type: 3}
+  enemyHealthRenderer: {fileID: 1542885778}
+  enemyAnimator: {fileID: 1019248617}
+  questionManager: {fileID: 270928339}
 --- !u!1 &1600906154
 GameObject:
   m_ObjectHideFlags: 0
@@ -5238,8 +5238,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1512748566}
-        m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+      - m_Target: {fileID: 1570186598}
+        m_TargetAssemblyTypeName: TurnManager, Assembly-CSharp
         m_MethodName: ConfirmAction
         m_Mode: 1
         m_Arguments:
@@ -5865,6 +5865,7 @@ MonoBehaviour:
   - {fileID: 6512634512270057540, guid: 02568ea4807c6294d84b34c925067389, type: 3}
   - {fileID: 7445483725821379359, guid: 02568ea4807c6294d84b34c925067389, type: 3}
   healthRenderer: {fileID: 1399586918}
+  playerAnimator: {fileID: 1512748565}
 --- !u!4 &1925616784
 Transform:
   m_ObjectHideFlags: 0
@@ -6072,9 +6073,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida
-    urna massa, tempus consectetur odio tempus a. Donec congue neque quis urna pharetra
-    tristique. '
+  m_Text: x
 --- !u!222 &1980261292
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6360,7 +6359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4cf4d0c0767e94781efd85011288ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnostxt: {fileID: 0}
+  turnostxt: {fileID: 1321226880}
 --- !u!114 &2025537049
 MonoBehaviour:
   m_ObjectHideFlags: 0
