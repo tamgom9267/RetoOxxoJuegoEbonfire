@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 9a8387cdf2edec943b916cf0ad498140
+guid: 2e2c5726e2c73f948bbbdc1ef9b3abe2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3747456038159301806
-    second: Purwanto_NounProject_0
-  - first:
-      213: 3602021454577759499
-    second: Purwanto_NounProject_1
+      213: 7766721758921934520
+    second: scissors_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,17 +135,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Purwanto_NounProject_0
+      name: scissors_0
       rect:
         serializedVersion: 2
-        x: 75
-        y: 199
-        width: 228
-        height: 178
+        x: 9
+        y: 12
+        width: 423
+        height: 423
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,30 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2534f12969c5efbc0800000000000000
-      internalID: -3747456038159301806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Purwanto_NounProject_1
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 30
-        width: 512
-        height: 492
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b057179bd63fcf130800000000000000
-      internalID: 3602021454577759499
+      spriteID: 8b6c6d53a40f8cb60800000000000000
+      internalID: 7766721758921934520
       vertices: []
       indices: 
       edges: []
@@ -199,8 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Purwanto_NounProject_0: -3747456038159301806
-      Purwanto_NounProject_1: 3602021454577759499
+      scissors_0: 7766721758921934520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

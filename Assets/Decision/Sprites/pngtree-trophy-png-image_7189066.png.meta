@@ -1,0 +1,1391 @@
+fileFormatVersion: 2
+guid: f133d45191339c64192929882705ecd8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7261689692097532517
+    second: pngtree-trophy-png-image_7189066_0
+  - first:
+      213: -7783087933438707403
+    second: pngtree-trophy-png-image_7189066_1
+  - first:
+      213: 210297458269266746
+    second: pngtree-trophy-png-image_7189066_2
+  - first:
+      213: 1452242836300158314
+    second: pngtree-trophy-png-image_7189066_3
+  - first:
+      213: 1398002701169187861
+    second: pngtree-trophy-png-image_7189066_4
+  - first:
+      213: -4016888283021914195
+    second: pngtree-trophy-png-image_7189066_5
+  - first:
+      213: -6857702472210998573
+    second: pngtree-trophy-png-image_7189066_6
+  - first:
+      213: 379325831114422350
+    second: pngtree-trophy-png-image_7189066_7
+  - first:
+      213: 245450516010446914
+    second: pngtree-trophy-png-image_7189066_8
+  - first:
+      213: -6269823311678622849
+    second: pngtree-trophy-png-image_7189066_9
+  - first:
+      213: 1297639832887313785
+    second: pngtree-trophy-png-image_7189066_10
+  - first:
+      213: -4605757776481082562
+    second: pngtree-trophy-png-image_7189066_11
+  - first:
+      213: -6676294722633425291
+    second: pngtree-trophy-png-image_7189066_12
+  - first:
+      213: 3524717186136855703
+    second: pngtree-trophy-png-image_7189066_13
+  - first:
+      213: 7274354835167669721
+    second: pngtree-trophy-png-image_7189066_14
+  - first:
+      213: -7715012347889051468
+    second: pngtree-trophy-png-image_7189066_15
+  - first:
+      213: 781813478744052680
+    second: pngtree-trophy-png-image_7189066_16
+  - first:
+      213: -8874087297946641603
+    second: pngtree-trophy-png-image_7189066_17
+  - first:
+      213: 8027156978247955397
+    second: pngtree-trophy-png-image_7189066_18
+  - first:
+      213: 3254157841221339516
+    second: pngtree-trophy-png-image_7189066_19
+  - first:
+      213: -3399428949132025530
+    second: pngtree-trophy-png-image_7189066_20
+  - first:
+      213: -244347649914712699
+    second: pngtree-trophy-png-image_7189066_21
+  - first:
+      213: 8507937414802078137
+    second: pngtree-trophy-png-image_7189066_22
+  - first:
+      213: 7562711510851942145
+    second: pngtree-trophy-png-image_7189066_23
+  - first:
+      213: 3262430939545687634
+    second: pngtree-trophy-png-image_7189066_24
+  - first:
+      213: 8686433401272310377
+    second: pngtree-trophy-png-image_7189066_25
+  - first:
+      213: 6418244691808212783
+    second: pngtree-trophy-png-image_7189066_26
+  - first:
+      213: 4429776000135527679
+    second: pngtree-trophy-png-image_7189066_27
+  - first:
+      213: -6179529986687041164
+    second: pngtree-trophy-png-image_7189066_28
+  - first:
+      213: -943874759150173772
+    second: pngtree-trophy-png-image_7189066_29
+  - first:
+      213: 2214547865555912153
+    second: pngtree-trophy-png-image_7189066_30
+  - first:
+      213: -5160090104863743806
+    second: pngtree-trophy-png-image_7189066_31
+  - first:
+      213: 8069849660451252600
+    second: pngtree-trophy-png-image_7189066_32
+  - first:
+      213: -3043717811417079197
+    second: pngtree-trophy-png-image_7189066_33
+  - first:
+      213: 1765739504409194909
+    second: pngtree-trophy-png-image_7189066_34
+  - first:
+      213: 8184079074323148661
+    second: pngtree-trophy-png-image_7189066_35
+  - first:
+      213: -2245006508187972616
+    second: pngtree-trophy-png-image_7189066_36
+  - first:
+      213: -1030605048542141850
+    second: pngtree-trophy-png-image_7189066_37
+  - first:
+      213: 7166828233413519204
+    second: pngtree-trophy-png-image_7189066_38
+  - first:
+      213: -3974087390364316022
+    second: pngtree-trophy-png-image_7189066_39
+  - first:
+      213: 6278075284337898901
+    second: pngtree-trophy-png-image_7189066_40
+  - first:
+      213: -6026918914724702263
+    second: pngtree-trophy-png-image_7189066_41
+  - first:
+      213: -2598742733834613047
+    second: pngtree-trophy-png-image_7189066_42
+  - first:
+      213: 6936916095383381691
+    second: pngtree-trophy-png-image_7189066_43
+  - first:
+      213: -7455476154582691892
+    second: pngtree-trophy-png-image_7189066_44
+  - first:
+      213: -7834915126576009899
+    second: pngtree-trophy-png-image_7189066_45
+  - first:
+      213: 4834590728799677028
+    second: pngtree-trophy-png-image_7189066_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 946
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d2969f2bb493b90800000000000000
+      internalID: -7261689692097532517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1065
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539b1c7d2caecf390800000000000000
+      internalID: -7783087933438707403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_2
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1090
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33ae419c602be200800000000000000
+      internalID: 210297458269266746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_3
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 946
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65d6415a27672410800000000000000
+      internalID: 1452242836300158314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_4
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1065
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51cd93ebc04b66310800000000000000
+      internalID: 1398002701169187861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_5
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1090
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dafcc0493652148c0800000000000000
+      internalID: -4016888283021914195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 962
+        width: 68
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da9b886feb84d0a0800000000000000
+      internalID: -6857702472210998573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_7
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1008
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4874b965d2a34500800000000000000
+      internalID: 379325831114422350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_8
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1045
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2403db0a1f3086300800000000000000
+      internalID: 245450516010446914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_9
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 991
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73beeebaec1df8a0800000000000000
+      internalID: -6269823311678622849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_10
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 990
+        width: 24
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97545a58d84220210800000000000000
+      internalID: 1297639832887313785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_11
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1008
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e332a5364bf0510c0800000000000000
+      internalID: -4605757776481082562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_12
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1045
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e9e9182590953a0800000000000000
+      internalID: -6676294722633425291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_13
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 947
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794d6652b9f4ae030800000000000000
+      internalID: 3524717186136855703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_14
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 947
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd60507e23b3f460800000000000000
+      internalID: 7274354835167669721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_15
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 978
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8125e3525cee490800000000000000
+      internalID: -7715012347889051468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_16
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 786
+        width: 68
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c3d629773f89da00800000000000000
+      internalID: 781813478744052680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_17
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 862
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b95149e98e8d480800000000000000
+      internalID: -8874087297946641603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_18
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 13
+        width: 562
+        height: 904
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c374c4fdb0366f60800000000000000
+      internalID: 8027156978247955397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_19
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 862
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79cc09b057192d20800000000000000
+      internalID: 3254157841221339516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_20
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 614
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6416ec7b16dc2d0d0800000000000000
+      internalID: -3399428949132025530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_21
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 808
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58dc1256b17eb9cf0800000000000000
+      internalID: -244347649914712699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_22
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 728
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b978847004421670800000000000000
+      internalID: 8507937414802078137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_23
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 766
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1077617dc0624f860800000000000000
+      internalID: 7562711510851942145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_24
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 723
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2565dd787ab764d20800000000000000
+      internalID: 3262430939545687634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_25
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 668
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a9cefd7296c8870800000000000000
+      internalID: 8686433401272310377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_26
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 699
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27d3c8ba8f221950800000000000000
+      internalID: 6418244691808212783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_27
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 639
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffcf0aa5dc9b97d30800000000000000
+      internalID: 4429776000135527679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_28
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 639
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47105a8b736ed3aa0800000000000000
+      internalID: -6179529986687041164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_29
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 345
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1856c48eea6e2f0800000000000000
+      internalID: -943874759150173772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_30
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 566
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d54f80fc87abbe10800000000000000
+      internalID: 2214547865555912153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_31
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 565
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0a692936da368b0800000000000000
+      internalID: -5160090104863743806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_32
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 464
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879e002a28dddff60800000000000000
+      internalID: 8069849660451252600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_33
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 489
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362a4fdd6ca82c5d0800000000000000
+      internalID: -3043717811417079197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_34
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 407
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d913f2659ba218810800000000000000
+      internalID: 1765739504409194909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_35
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 444
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f2db69e80b39170800000000000000
+      internalID: 8184079074323148661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_36
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 346
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb0401b97228d0e0800000000000000
+      internalID: -2245006508187972616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_37
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 377
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662ebe13b2e82b1f0800000000000000
+      internalID: -1030605048542141850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_38
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 261
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4676ada8e40b57360800000000000000
+      internalID: 7166828233413519204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_39
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 261
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ec9f6f29439d8c0800000000000000
+      internalID: -3974087390364316022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_40
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 13
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595be1c5534302750800000000000000
+      internalID: 6278075284337898901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_41
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 185
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c750c5dd251c5ca0800000000000000
+      internalID: -6026918914724702263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_42
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 210
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce092790496febd0800000000000000
+      internalID: -2598742733834613047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_43
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 127
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb624067f60e44060800000000000000
+      internalID: 6936916095383381691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_44
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 165
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf04be20f3d88890800000000000000
+      internalID: -7455476154582691892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_45
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 67
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d2a1b143ac44390800000000000000
+      internalID: -7834915126576009899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-trophy-png-image_7189066_46
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 98
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a608037aae71340800000000000000
+      internalID: 4834590728799677028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pngtree-trophy-png-image_7189066_0: -7261689692097532517
+      pngtree-trophy-png-image_7189066_1: -7783087933438707403
+      pngtree-trophy-png-image_7189066_10: 1297639832887313785
+      pngtree-trophy-png-image_7189066_11: -4605757776481082562
+      pngtree-trophy-png-image_7189066_12: -6676294722633425291
+      pngtree-trophy-png-image_7189066_13: 3524717186136855703
+      pngtree-trophy-png-image_7189066_14: 7274354835167669721
+      pngtree-trophy-png-image_7189066_15: -7715012347889051468
+      pngtree-trophy-png-image_7189066_16: 781813478744052680
+      pngtree-trophy-png-image_7189066_17: -8874087297946641603
+      pngtree-trophy-png-image_7189066_18: 8027156978247955397
+      pngtree-trophy-png-image_7189066_19: 3254157841221339516
+      pngtree-trophy-png-image_7189066_2: 210297458269266746
+      pngtree-trophy-png-image_7189066_20: -3399428949132025530
+      pngtree-trophy-png-image_7189066_21: -244347649914712699
+      pngtree-trophy-png-image_7189066_22: 8507937414802078137
+      pngtree-trophy-png-image_7189066_23: 7562711510851942145
+      pngtree-trophy-png-image_7189066_24: 3262430939545687634
+      pngtree-trophy-png-image_7189066_25: 8686433401272310377
+      pngtree-trophy-png-image_7189066_26: 6418244691808212783
+      pngtree-trophy-png-image_7189066_27: 4429776000135527679
+      pngtree-trophy-png-image_7189066_28: -6179529986687041164
+      pngtree-trophy-png-image_7189066_29: -943874759150173772
+      pngtree-trophy-png-image_7189066_3: 1452242836300158314
+      pngtree-trophy-png-image_7189066_30: 2214547865555912153
+      pngtree-trophy-png-image_7189066_31: -5160090104863743806
+      pngtree-trophy-png-image_7189066_32: 8069849660451252600
+      pngtree-trophy-png-image_7189066_33: -3043717811417079197
+      pngtree-trophy-png-image_7189066_34: 1765739504409194909
+      pngtree-trophy-png-image_7189066_35: 8184079074323148661
+      pngtree-trophy-png-image_7189066_36: -2245006508187972616
+      pngtree-trophy-png-image_7189066_37: -1030605048542141850
+      pngtree-trophy-png-image_7189066_38: 7166828233413519204
+      pngtree-trophy-png-image_7189066_39: -3974087390364316022
+      pngtree-trophy-png-image_7189066_4: 1398002701169187861
+      pngtree-trophy-png-image_7189066_40: 6278075284337898901
+      pngtree-trophy-png-image_7189066_41: -6026918914724702263
+      pngtree-trophy-png-image_7189066_42: -2598742733834613047
+      pngtree-trophy-png-image_7189066_43: 6936916095383381691
+      pngtree-trophy-png-image_7189066_44: -7455476154582691892
+      pngtree-trophy-png-image_7189066_45: -7834915126576009899
+      pngtree-trophy-png-image_7189066_46: 4834590728799677028
+      pngtree-trophy-png-image_7189066_5: -4016888283021914195
+      pngtree-trophy-png-image_7189066_6: -6857702472210998573
+      pngtree-trophy-png-image_7189066_7: 379325831114422350
+      pngtree-trophy-png-image_7189066_8: 245450516010446914
+      pngtree-trophy-png-image_7189066_9: -6269823311678622849
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
