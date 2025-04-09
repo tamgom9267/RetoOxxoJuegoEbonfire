@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 // Clase que maneja el sistema de puntos del juego y su sincronización con el servidor
 public class DecisionPointsManager : MonoBehaviour
 {
-    private const string API_URL = "https://10.22.231.104:7220/DecisionPoints"; // URL del servidor
+    private const string API_URL = "https://localhost:7220/DecisionPoints"; // URL del servidor
     private float currentPoints;                                              // Puntos actuales
     private StreakManagerD streakManager;                                     // Gestor de rachas
     private int userId;                                                       // ID del usuario
