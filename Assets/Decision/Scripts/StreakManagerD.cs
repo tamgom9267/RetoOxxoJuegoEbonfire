@@ -15,7 +15,7 @@ public class StreakManagerD : MonoBehaviour
     void Start()
     {
         //userId = PlayerPrefs.GetString();
-        userId = 1;
+        userId = PlayerPrefs.GetInt("UserId");
         StartCoroutine(LoadStreak());  // Carga la racha al iniciar
     }
 

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 // Clase que maneja la navegación entre escenas del juego
 public class NewMonoBehaviourScript : MonoBehaviour
@@ -30,3 +31,4 @@ public class NewMonoBehaviourScript : MonoBehaviour
         SceneManager.LoadScene("InventarioScene");
     }
 }
+

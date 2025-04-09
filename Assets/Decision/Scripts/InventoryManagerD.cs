@@ -12,7 +12,7 @@ public class InventoryManagerD : MonoBehaviour
     
     // URL base de la API para gestionar el inventario
     private const string API_URL = "https://10.227.1.80:7220/Inventory";
-    private string userId;
+    private int userId;
     public InventoryItem currentInventory;
 
     // Referencias a los objetos que representan items en el juego
@@ -25,7 +25,7 @@ public class InventoryManagerD : MonoBehaviour
     [Serializable]
     public class InventoryItem
     {
-        public int userId;      // ID del usuario
+        private int userId;      // ID del usuario
         public bool item_1;     // Estado del item 1
         public bool item_2;     // Estado del item 2
         public bool item_3;     // Estado del item 3
@@ -34,8 +34,7 @@ public class InventoryManagerD : MonoBehaviour
 
     void Start()
     {
-        //userId = PlayerPrefs.GetString();
-        userId = "1";
+        userId = PlayerPrefs.GetInt("UserId");
         StartCoroutine(LoadInventory());
     }
 
