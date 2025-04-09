@@ -273,6 +273,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1323,7 +1336,54 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pngtree-trophy-png-image_7189066_0: -7261689692097532517
+      pngtree-trophy-png-image_7189066_1: -7783087933438707403
+      pngtree-trophy-png-image_7189066_10: 1297639832887313785
+      pngtree-trophy-png-image_7189066_11: -4605757776481082562
+      pngtree-trophy-png-image_7189066_12: -6676294722633425291
+      pngtree-trophy-png-image_7189066_13: 3524717186136855703
+      pngtree-trophy-png-image_7189066_14: 7274354835167669721
+      pngtree-trophy-png-image_7189066_15: -7715012347889051468
+      pngtree-trophy-png-image_7189066_16: 781813478744052680
+      pngtree-trophy-png-image_7189066_17: -8874087297946641603
+      pngtree-trophy-png-image_7189066_18: 8027156978247955397
+      pngtree-trophy-png-image_7189066_19: 3254157841221339516
+      pngtree-trophy-png-image_7189066_2: 210297458269266746
+      pngtree-trophy-png-image_7189066_20: -3399428949132025530
+      pngtree-trophy-png-image_7189066_21: -244347649914712699
+      pngtree-trophy-png-image_7189066_22: 8507937414802078137
+      pngtree-trophy-png-image_7189066_23: 7562711510851942145
+      pngtree-trophy-png-image_7189066_24: 3262430939545687634
+      pngtree-trophy-png-image_7189066_25: 8686433401272310377
+      pngtree-trophy-png-image_7189066_26: 6418244691808212783
+      pngtree-trophy-png-image_7189066_27: 4429776000135527679
+      pngtree-trophy-png-image_7189066_28: -6179529986687041164
+      pngtree-trophy-png-image_7189066_29: -943874759150173772
+      pngtree-trophy-png-image_7189066_3: 1452242836300158314
+      pngtree-trophy-png-image_7189066_30: 2214547865555912153
+      pngtree-trophy-png-image_7189066_31: -5160090104863743806
+      pngtree-trophy-png-image_7189066_32: 8069849660451252600
+      pngtree-trophy-png-image_7189066_33: -3043717811417079197
+      pngtree-trophy-png-image_7189066_34: 1765739504409194909
+      pngtree-trophy-png-image_7189066_35: 8184079074323148661
+      pngtree-trophy-png-image_7189066_36: -2245006508187972616
+      pngtree-trophy-png-image_7189066_37: -1030605048542141850
+      pngtree-trophy-png-image_7189066_38: 7166828233413519204
+      pngtree-trophy-png-image_7189066_39: -3974087390364316022
+      pngtree-trophy-png-image_7189066_4: 1398002701169187861
+      pngtree-trophy-png-image_7189066_40: 6278075284337898901
+      pngtree-trophy-png-image_7189066_41: -6026918914724702263
+      pngtree-trophy-png-image_7189066_42: -2598742733834613047
+      pngtree-trophy-png-image_7189066_43: 6936916095383381691
+      pngtree-trophy-png-image_7189066_44: -7455476154582691892
+      pngtree-trophy-png-image_7189066_45: -7834915126576009899
+      pngtree-trophy-png-image_7189066_46: 4834590728799677028
+      pngtree-trophy-png-image_7189066_5: -4016888283021914195
+      pngtree-trophy-png-image_7189066_6: -6857702472210998573
+      pngtree-trophy-png-image_7189066_7: 379325831114422350
+      pngtree-trophy-png-image_7189066_8: 245450516010446914
+      pngtree-trophy-png-image_7189066_9: -6269823311678622849
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
