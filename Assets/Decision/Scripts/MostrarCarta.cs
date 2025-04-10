@@ -36,8 +36,8 @@ public class MostrarCarta : MonoBehaviour
     void Start()
     {
         textPanel.SetActive(false);
-        streakManager = FindObjectOfType<StreakManagerD>();
-        pointsManager = FindObjectOfType<DecisionPointsManager>();
+        streakManager = FindFirstObjectByType<StreakManagerD>();
+        pointsManager = FindFirstObjectByType<DecisionPointsManager>();
         if (streakManager == null)
         {
             Debug.LogError("No se encontró StreakManagerD en la escena. Asegúrate de que existe en la escena.");
@@ -89,7 +89,7 @@ public class MostrarCarta : MonoBehaviour
             if (Random.value <= 0.5f) // 50% de probabilidad
             {
                 // Inicia el minijuego de Piedra, Papel o Tijera
-                var pptGame = FindObjectOfType<PPTGameManager>();
+                var pptGame = FindFirstObjectByType<PPTGameManager>();
                 if (pptGame != null)
                 {
                     pptGame.PlayGame();

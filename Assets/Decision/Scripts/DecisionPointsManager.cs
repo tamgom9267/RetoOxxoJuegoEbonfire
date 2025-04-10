@@ -17,7 +17,7 @@ public class DecisionPointsManager : MonoBehaviour
     void Start()
     {
         userId = 1; // ID de usuario hardcodeado
-        streakManager = FindObjectOfType<StreakManagerD>();
+        streakManager = FindFirstObjectByType<StreakManagerD>();
         StartCoroutine(LoadPoints());    // Carga puntos del servidor
         UpdatePointsText();              // Actualiza UI
     }

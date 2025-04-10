@@ -11,8 +11,8 @@ public class PurchaseButtons : MonoBehaviour
     void Start()
     {
         // Obtiene las referencias necesarias
-        pointsManager = FindObjectOfType<DecisionPointsManager>();
-        InventoryManager = FindObjectOfType<InventoryManagerD>();
+        pointsManager = FindFirstObjectByType<DecisionPointsManager>();
+        InventoryManager = FindFirstObjectByType<InventoryManagerD>();
         if (pointsManager == null)
         {
             Debug.LogError("No se encontró DecisionPointsManager en la escena");
