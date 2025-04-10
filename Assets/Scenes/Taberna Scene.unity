@@ -11640,7 +11640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11651,7 +11651,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 35
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 300
     m_Alignment: 4
@@ -11660,12 +11660,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt
-    enim a urna dictum, id suscipit augue rhoncus. Proin quis facilisis sem, ut ultricies
-    neque. Suspendisse porta vel ligula tincidunt pharetra. Cras suscipit orci vel
-    orci placerat malesuada id id lacus. Quisque eu finibus felis, a facilisis erat.
-    Nunc eleifend congue eros, et eleifend augue pretium vulputate. Nam quis nisl
-    vitae ante accumsan imperdiet et vel risus
+  m_Text: "Necesitas recolectar objetos para poder reabastecer cada uno de tus Oxxos.
+    Existen 5 objetos en total, y deber\xE1s visitar cada Oxxo para enfrentarte a
+    monstruos y as\xED conseguir los objetos necesarios. Reabastecer\xE1s cada tienda
+    uno por uno. Ganar\xE1s el juego al haber obtenido todos los objetos."
 --- !u!222 &765869021
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29502,7 +29500,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFListo para luchar?\nEscoge que materiales obtener"
+  m_Text: "\xBFListo para luchar?\nEl objeto de este oxxo es:"
 --- !u!222 &1743016437
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35937,7 +35935,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0019779205, y: 0.16281748}
+  m_Offset: {x: 0.0019779205, y: 0.22392893}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -35947,7 +35945,7 @@ BoxCollider2D:
     drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5865278, y: 0.3530798}
+  m_Size: {x: 0.5865278, y: 0.37237835}
   m_EdgeRadius: 0
 --- !u!114 &5628018141293701602
 MonoBehaviour:
@@ -35961,7 +35959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd146093740c5d43b5909c7913f3109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5.5
 --- !u!1 &5628018141293701613
 GameObject:
   m_ObjectHideFlags: 0
