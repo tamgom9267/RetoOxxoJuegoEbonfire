@@ -30,8 +30,8 @@ public class LogrosManager : MonoBehaviour
         yield return StartCoroutine(LoadLogros());
         
         // Verificar logros después de cargarlos
-        pointsManager = FindObjectOfType<DecisionPointsManager>();
-        streakManager = FindObjectOfType<StreakManagerD>();
+        pointsManager = FindFirstObjectByType<DecisionPointsManager>();
+        streakManager = FindFirstObjectByType<StreakManagerD>();
         
         if (pointsManager != null && streakManager != null)
         {

@@ -9,7 +9,7 @@ public class LogrosUI : MonoBehaviour
     
     void Start()
     {
-        logrosManager = FindObjectOfType<LogrosManager>();
+        logrosManager = FindFirstObjectByType<LogrosManager>();
         if (logrosManager == null)
         {
             Debug.LogError("LogrosManager no encontrado en la escena");

@@ -15,9 +15,9 @@ public class PPTGameManager : MonoBehaviour
     void Start()
     {
         // Obtiene referencias a los gestores necesarios
-        streakManager = FindObjectOfType<StreakManagerD>();
-        pointsManager = FindObjectOfType<DecisionPointsManager>();
-        mostrarCarta = FindObjectOfType<MostrarCarta>();
+        streakManager = FindFirstObjectByType<StreakManagerD>();
+        pointsManager = FindFirstObjectByType<DecisionPointsManager>();
+        mostrarCarta = FindFirstObjectByType<MostrarCarta>();
         
         // Oculta el panel del juego al inicio
         if (pptPanel) pptPanel.SetActive(false);
