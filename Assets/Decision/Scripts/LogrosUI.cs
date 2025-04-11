@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Clase que maneja la interfaz de usuario para los logros
 public class LogrosUI : MonoBehaviour
 {
     public GameObject logrosPanel;          // Panel principal de logros
     public Text[] logrosTexts;             // Array de textos para cada logro
     private LogrosManager logrosManager;    // Referencia al gestor de logros
     
+    // Inicialización y configuración inicial
     void Start()
     {
         logrosManager = FindFirstObjectByType<LogrosManager>();
@@ -19,6 +21,7 @@ public class LogrosUI : MonoBehaviour
         logrosPanel.SetActive(false);
     }
 
+    // Alterna la visibilidad del panel de logros con animación
     public void ToggleLogrosPanel()
     {
         if (!logrosPanel.activeSelf)
@@ -35,6 +38,7 @@ public class LogrosUI : MonoBehaviour
         }
     }
 
+    // Actualiza el estado visual de los logros
     void ActualizarUI()
     {
         for (int i = 0; i < logrosTexts.Length; i++)

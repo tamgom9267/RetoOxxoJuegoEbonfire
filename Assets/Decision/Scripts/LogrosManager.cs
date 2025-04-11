@@ -119,7 +119,6 @@ public class LogrosManager : MonoBehaviour
     }
 }
 
-[Serializable]
 public class LogrosData
 {
     public bool logro_dec1;

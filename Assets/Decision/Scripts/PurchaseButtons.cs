@@ -1,17 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Clase que maneja los botones de compra en la tienda
 public class PurchaseButtons : MonoBehaviour
 {
+    // Referencias a los gestores necesarios
     private DecisionPointsManager pointsManager;
     private InventoryManagerD inventoryManager;
     private LogrosManager logrosManager;
     private StreakManagerD streakManager;
     public Text pointsDisplayText;
     
+    // Inicialización de componentes
     void Start()
     {
-        // Obtiene todas las referencias necesarias una sola vez
         pointsManager = FindFirstObjectByType<DecisionPointsManager>();
         inventoryManager = FindFirstObjectByType<InventoryManagerD>();
         logrosManager = FindFirstObjectByType<LogrosManager>();
@@ -25,6 +27,7 @@ public class PurchaseButtons : MonoBehaviour
         UpdatePointsDisplay();
     }
 
+    // Actualiza el display de puntos
     private void UpdatePointsDisplay()
     {
         if (pointsDisplayText != null && pointsManager != null)
@@ -37,11 +40,13 @@ public class PurchaseButtons : MonoBehaviour
         }
     }
 
+    // Actualización continua del display
     private void Update()
     {
         UpdatePointsDisplay();
     }
 
+    // Métodos para comprar items específicos
     public void PurchaseItem1()
     {
         if (pointsManager.GetCurrentPoints() >= 50)

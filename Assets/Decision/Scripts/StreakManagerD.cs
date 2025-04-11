@@ -5,40 +5,41 @@ using System.Collections;
 using Newtonsoft.Json;
 using Unity.Android.Gradle.Manifest;
 
-// Clase que maneja el sistema de rachas (streaks) del jugador y su sincronización con el servidor
+// Gestor del sistema de rachas y su sincronización con el servidor
 public class StreakManagerD : MonoBehaviour
 {
-    private const string API_URL = "https://localhost:7220/Streaks";  // URL del endpoint de la API
+    private const string API_URL = "https://localhost:7220/Streaks";
     public int currentStreak;   // Racha actual del jugador
-    private int userId;         // ID del usuario actual
+    private int userId;         // ID del usuario
     
+    // Inicialización y carga de racha
     void Start()
     {
         userId = PlayerPrefs.GetInt("UserId");
-        StartCoroutine(LoadStreak());  // Carga la racha al iniciar
+        StartCoroutine(LoadStreak());
     }
 
-    // Incrementa la racha actual y la guarda
+    // Incrementa la racha actual
     public void IncrementStreak()
     {
         currentStreak++;
         StartCoroutine(SaveStreak());
     }
     
-    // Reinicia la racha a cero y la guarda
+    // Reinicia la racha a cero
     public void ResetStreak()
     {
         currentStreak = 0;
         StartCoroutine(SaveStreak());
     }
 
-    // Obtiene la racha actual del servidor
+    // Obtiene la racha actual
     public void getStreak()
     {
         StartCoroutine(LoadStreak());
     }
     
-    // Guarda la racha actual en el servidor
+    // Guarda la racha en el servidor
     private IEnumerator SaveStreak()
     {
         UnityWebRequest web = UnityWebRequest.Put($"{API_URL}/{userId}", 
@@ -82,10 +83,10 @@ public class StreakManagerD : MonoBehaviour
     }
 }
 
-// Clase para serializar/deserializar los datos de la racha
-[Serializable]
+// Estructura de datos para la racha
 public class StreakData
 {
     public int userId;   // ID del usuario
     public int streak;   // Valor de la racha
 }
+
