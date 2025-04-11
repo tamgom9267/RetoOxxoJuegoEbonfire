@@ -6,15 +6,15 @@ using Newtonsoft.Json;
 
 public class LogrosManager : MonoBehaviour
 {
-    private const string API_URL = "https://10.227.1.80:7220/Logros";
+    private const string API_URL = "https://localhost:7220/Logros";
     private int userId;
     private bool[] logrosDesbloqueados = new bool[4];
     DecisionPointsManager pointsManager;
     StreakManagerD streakManager;
 
     public static string[] logrosDescripciones = new string[] {
-        "¡Primera Victoria!",
-        "Racha de 3 victorias",
+        "¡Primeros Puntos!",
+        "Racha de 3",
         "Comprar primer item",
         "Acumular 500 puntos"
     };
@@ -25,22 +25,18 @@ public class LogrosManager : MonoBehaviour
         StartCoroutine(LoadLogrosAndVerify());
     }
 
-        private IEnumerator LoadLogrosAndVerify()
+    private IEnumerator LoadLogrosAndVerify()
     {
         yield return StartCoroutine(LoadLogros());
         
         // Verificar logros después de cargarlos
-        pointsManager = FindObjectOfType<DecisionPointsManager>();
-        streakManager = FindObjectOfType<StreakManagerD>();
-        
-        if (pointsManager != null && streakManager != null)
-        {
+        pointsManager = FindFirstObjectByType<DecisionPointsManager>();
+        streakManager = FindFirstObjectByType<StreakManagerD>();
             VerificarLogros(
                 pointsManager.GetCurrentPoints(),
                 streakManager.GetCurrentStreak(),
                 false
             );
-        }
     }
 
     public void DesbloquearLogro(int numeroLogro)

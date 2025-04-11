@@ -10,7 +10,8 @@ public class MostrarCarta : MonoBehaviour
     public Text streakText;            // Texto que muestra la racha actual
     private StreakManagerD streakManager;    // Gestor de rachas
     private DecisionPointsManager pointsManager;  // Gestor de puntos
-    
+    private SFXManager sfxmanager;
+
     // Array de textos predefinidos para las cartas
     private string[] textosPredefinidos = new string[]
     {
@@ -36,8 +37,9 @@ public class MostrarCarta : MonoBehaviour
     void Start()
     {
         textPanel.SetActive(false);
-        streakManager = FindObjectOfType<StreakManagerD>();
-        pointsManager = FindObjectOfType<DecisionPointsManager>();
+        sfxmanager = FindFirstObjectByType<SFXManager>();
+        streakManager = FindFirstObjectByType<StreakManagerD>();
+        pointsManager = FindFirstObjectByType<DecisionPointsManager>();
         if (streakManager == null)
         {
             Debug.LogError("No se encontró StreakManagerD en la escena. Asegúrate de que existe en la escena.");
@@ -61,12 +63,19 @@ public class MostrarCarta : MonoBehaviour
     // Maneja el clic en la carta
     public void OnCardClick()
     {
-        textPanel.SetActive(!textPanel.activeSelf);
-        
-        if(textPanel.activeSelf)
+        if(!textPanel.activeSelf)
         {
+            textPanel.SetActive(true);
+            textPanel.transform.localScale = Vector3.zero;
+            LeanTween.scale(textPanel, Vector3.one, 0.3f).setEase(LeanTweenType.easeOutBack);
             indiceActual = Random.Range(0, textosPredefinidos.Length);
             descriptionText.text = textosPredefinidos[indiceActual];
+        }
+        else
+        {
+            LeanTween.scale(textPanel, Vector3.zero, 0.2f).setEase(LeanTweenType.easeInBack).setOnComplete(() => {
+                textPanel.SetActive(false);
+            });
         }
     }
 
@@ -85,11 +94,12 @@ public class MostrarCarta : MonoBehaviour
     {
         if(respuestaUsuario == respuestasCorrectas[indiceActual])
         {
+            sfxmanager.RespuestaCorrecta();
             Debug.Log("¡Correcto!");
             if (Random.value <= 0.5f) // 50% de probabilidad
             {
                 // Inicia el minijuego de Piedra, Papel o Tijera
-                var pptGame = FindObjectOfType<PPTGameManager>();
+                var pptGame = FindFirstObjectByType<PPTGameManager>();
                 if (pptGame != null)
                 {
                     pptGame.PlayGame();
@@ -106,6 +116,7 @@ public class MostrarCarta : MonoBehaviour
         }
         else
         {
+            sfxmanager.RespuestaIncorrecta();
             Debug.Log("Incorrecto");
             streakManager.ResetStreak();
             pointsManager.ReducePoints(5f); // Reduce 5 puntos por respuesta incorrecta

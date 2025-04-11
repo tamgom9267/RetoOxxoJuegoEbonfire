@@ -1,18 +1,22 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-// Clase que maneja la compra de items en la tienda
 public class PurchaseButtons : MonoBehaviour
 {
-    private DecisionPointsManager pointsManager;    // Referencia al gestor de puntos
-    private InventoryManagerD InventoryManager;     // Referencia al gestor de inventario
-    public Text pointsDisplayText;                  // Texto UI que muestra los puntos
+    private DecisionPointsManager pointsManager;
+    private InventoryManagerD inventoryManager;
+    private LogrosManager logrosManager;
+    private StreakManagerD streakManager;
+    public Text pointsDisplayText;
     
     void Start()
     {
-        // Obtiene las referencias necesarias
-        pointsManager = FindObjectOfType<DecisionPointsManager>();
-        InventoryManager = FindObjectOfType<InventoryManagerD>();
+        // Obtiene todas las referencias necesarias una sola vez
+        pointsManager = FindFirstObjectByType<DecisionPointsManager>();
+        inventoryManager = FindFirstObjectByType<InventoryManagerD>();
+        logrosManager = FindFirstObjectByType<LogrosManager>();
+        streakManager = FindFirstObjectByType<StreakManagerD>();
+
         if (pointsManager == null)
         {
             Debug.LogError("No se encontró DecisionPointsManager en la escena");
@@ -21,7 +25,6 @@ public class PurchaseButtons : MonoBehaviour
         UpdatePointsDisplay();
     }
 
-    // Actualiza el texto que muestra los puntos disponibles
     private void UpdatePointsDisplay()
     {
         if (pointsDisplayText != null && pointsManager != null)
@@ -34,20 +37,22 @@ public class PurchaseButtons : MonoBehaviour
         }
     }
 
-    // Actualiza constantemente el display de puntos
     private void Update()
     {
         UpdatePointsDisplay();
     }
 
-    // Métodos para comprar diferentes items
-    // Cada método verifica si hay suficientes puntos y realiza la compra
     public void PurchaseItem1()
     {
         if (pointsManager.GetCurrentPoints() >= 50)
         {
             pointsManager.ReducePoints(50);
-            InventoryManager.PurchaseItem(1);
+            inventoryManager.PurchaseItem(1);
+            logrosManager.VerificarLogros(
+                pointsManager.GetCurrentPoints(),
+                streakManager.GetCurrentStreak(),
+                true
+            );
         }
     }
 
@@ -56,7 +61,12 @@ public class PurchaseButtons : MonoBehaviour
         if (pointsManager.GetCurrentPoints() >= 100)
         {
             pointsManager.ReducePoints(100);
-            InventoryManager.PurchaseItem(2);
+            inventoryManager.PurchaseItem(2);
+            logrosManager.VerificarLogros(
+                pointsManager.GetCurrentPoints(),
+                streakManager.GetCurrentStreak(),
+                true
+            );
         }
     }
 
@@ -65,7 +75,12 @@ public class PurchaseButtons : MonoBehaviour
         if (pointsManager.GetCurrentPoints() >= 150)
         {
             pointsManager.ReducePoints(150);
-            InventoryManager.PurchaseItem(3);
+            inventoryManager.PurchaseItem(3);
+            logrosManager.VerificarLogros(
+                pointsManager.GetCurrentPoints(),
+                streakManager.GetCurrentStreak(),
+                true
+            );
         }
     }
 
@@ -74,7 +89,12 @@ public class PurchaseButtons : MonoBehaviour
         if (pointsManager.GetCurrentPoints() >= 200)
         {
             pointsManager.ReducePoints(200);
-            InventoryManager.PurchaseItem(4);
+            inventoryManager.PurchaseItem(4);
+            logrosManager.VerificarLogros(
+                pointsManager.GetCurrentPoints(),
+                streakManager.GetCurrentStreak(),
+                true
+            );
         }
     }
 }

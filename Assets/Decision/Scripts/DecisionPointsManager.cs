@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 // Clase que maneja el sistema de puntos del juego y su sincronización con el servidor
 public class DecisionPointsManager : MonoBehaviour
 {
-    private const string API_URL = "https://10.227.1.80:7220/DecisionPoints"; // URL del servidor
+    private const string API_URL = "https://localhost:7220/DecisionPoints"; // URL del servidor
     private float currentPoints;                                              // Puntos actuales
     private StreakManagerD streakManager;                                     // Gestor de rachas
     private int userId;                                                       // ID del usuario
@@ -84,7 +84,6 @@ public class DecisionPointsManager : MonoBehaviour
         }
     }
 
-    // Getters y setters
     public float GetCurrentPoints() { return currentPoints; }
 
     // Actualiza el texto UI de puntos
@@ -93,6 +92,10 @@ public class DecisionPointsManager : MonoBehaviour
         if(pointsText != null)
         {
             pointsText.text = $"Puntos: {currentPoints}";
+            LeanTween.cancel(pointsText.gameObject);
+            pointsText.transform.localScale = Vector3.one * 1.2f;
+            LeanTween.scale(pointsText.gameObject, Vector3.one, 0.3f)
+                .setEase(LeanTweenType.easeOutElastic);
         }
     }
 

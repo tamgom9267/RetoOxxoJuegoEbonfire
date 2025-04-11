@@ -8,13 +8,12 @@ using Unity.Android.Gradle.Manifest;
 // Clase que maneja el sistema de rachas (streaks) del jugador y su sincronización con el servidor
 public class StreakManagerD : MonoBehaviour
 {
-    private const string API_URL = "https://10.227.1.80:7220/Streaks";  // URL del endpoint de la API
+    private const string API_URL = "https://localhost:7220/Streaks";  // URL del endpoint de la API
     public int currentStreak;   // Racha actual del jugador
     private int userId;         // ID del usuario actual
     
     void Start()
     {
-        //userId = PlayerPrefs.GetString();
         userId = PlayerPrefs.GetInt("UserId");
         StartCoroutine(LoadStreak());  // Carga la racha al iniciar
     }

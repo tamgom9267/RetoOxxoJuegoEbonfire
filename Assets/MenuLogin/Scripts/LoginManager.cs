@@ -12,7 +12,7 @@ public class LoginManager : MonoBehaviour
     public Button loginButton;
     public Text errorText;
     
-    private const string API_URL = "https://10.227.1.80:7220/Login";
+    private const string API_URL = "https://localhost:7220/Login";
 
     void Start()
     {

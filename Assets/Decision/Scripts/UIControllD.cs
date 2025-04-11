@@ -7,10 +7,12 @@ public class UIControllD : MonoBehaviour
 {
     public Text timeText;      // Referencia al texto que muestra el tiempo
     private int time;          // Contador de tiempo restante
+    private SFXManager sfxmanager;
     
     void Start()
     {
         // Inicializa el tiempo desde la instancia del GameControllD
+        sfxmanager = FindFirstObjectByType<SFXManager>();
         time = GameControllD.Instance.timeToWin;
         UpdateTimeText();
     }
@@ -43,5 +45,21 @@ public class UIControllD : MonoBehaviour
     void UpdateTimeText()
     {
         timeText.text = "Tiempo Restante: " + time;
+        
+        // Solo animar si quedan 15 segundos o menos
+        if(time <= 15)
+        {
+            timeText.transform.localScale = Vector3.one * 1.2f;
+            LeanTween.scale(timeText.gameObject, Vector3.one, 0.5f)
+                .setEase(LeanTweenType.easeOutBounce);
+            
+            // Cambiar color a rojo cuando queda poco tiempo
+            timeText.color = Color.red;
+            sfxmanager.PocoTiempo();
+        }
+        else
+        {
+            timeText.color = Color.white;
+        }
     }
 }

@@ -11,7 +11,7 @@ public class InventoryManagerD : MonoBehaviour
     public static InventoryManagerD Instance { get; private set; }
     
     // URL base de la API para gestionar el inventario
-    private const string API_URL = "https://10.227.1.80:7220/Inventory";
+    private const string API_URL = "https://localhost:7220/Inventory";
     private int userId;
     public InventoryItem currentInventory;
 

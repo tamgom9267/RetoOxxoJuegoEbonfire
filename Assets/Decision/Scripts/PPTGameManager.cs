@@ -10,17 +10,19 @@ public class PPTGameManager : MonoBehaviour
 
     // Referencias a elementos de la interfaz
     public GameObject pptPanel;     // Panel del juego
-    public Text resultadoText;      // Texto que muestra el resultado
+    public Text resultadoText;  
+    public GameObject boton;    // Texto que muestra el resultado
 
     void Start()
     {
         // Obtiene referencias a los gestores necesarios
-        streakManager = FindObjectOfType<StreakManagerD>();
-        pointsManager = FindObjectOfType<DecisionPointsManager>();
-        mostrarCarta = FindObjectOfType<MostrarCarta>();
+        streakManager = FindFirstObjectByType<StreakManagerD>();
+        pointsManager = FindFirstObjectByType<DecisionPointsManager>();
+        mostrarCarta = FindFirstObjectByType<MostrarCarta>();
         
         // Oculta el panel del juego al inicio
         if (pptPanel) pptPanel.SetActive(false);
+        boton.SetActive(false);
     }
 
     // Métodos para manejar las elecciones del jugador
@@ -54,6 +56,7 @@ public class PPTGameManager : MonoBehaviour
             pointsManager.AddPoints(5f);
             streakManager.IncrementStreak();
             mostrarCarta.UpdateStreakText();
+            boton.SetActive(true);
         }
         else if ((playerChoice == 0 && computerChoice == 2) || 
                  (playerChoice == 1 && computerChoice == 0) || 
@@ -63,6 +66,7 @@ public class PPTGameManager : MonoBehaviour
             streakManager.IncrementStreak();
             mostrarCarta.UpdateStreakText();
             pointsManager.AddPoints(10f);
+            boton.SetActive(true);
         }
         else
         {
@@ -70,6 +74,7 @@ public class PPTGameManager : MonoBehaviour
             pointsManager.ReducePoints(5f);
             streakManager.ResetStreak();
             mostrarCarta.UpdateStreakText();
+            boton.SetActive(true);
         }
 
         if (resultadoText) resultadoText.text = resultado;
@@ -79,5 +84,6 @@ public class PPTGameManager : MonoBehaviour
     private void CerrarPanel()
     {
         if (pptPanel) pptPanel.SetActive(false);
+        boton.SetActive(false);
     }
 }

@@ -9,7 +9,7 @@ public class LogrosUI : MonoBehaviour
     
     void Start()
     {
-        logrosManager = FindObjectOfType<LogrosManager>();
+        logrosManager = FindFirstObjectByType<LogrosManager>();
         if (logrosManager == null)
         {
             Debug.LogError("LogrosManager no encontrado en la escena");
@@ -21,10 +21,17 @@ public class LogrosUI : MonoBehaviour
 
     public void ToggleLogrosPanel()
     {
-        logrosPanel.SetActive(!logrosPanel.activeSelf);
-        if (logrosPanel.activeSelf)
+        if (!logrosPanel.activeSelf)
         {
+            logrosPanel.SetActive(true);
+            logrosPanel.transform.localScale = Vector3.zero;
+            LeanTween.scale(logrosPanel, Vector3.one, 0.3f).setEase(LeanTweenType.easeOutBack);
             ActualizarUI();
+        }
+        else
+        {
+            LeanTween.scale(logrosPanel, Vector3.zero, 0.2f).setEase(LeanTweenType.easeInBack)
+                .setOnComplete(() => logrosPanel.SetActive(false));
         }
     }
 
@@ -35,7 +42,7 @@ public class LogrosUI : MonoBehaviour
             bool desbloqueado = logrosManager.IsLogroDesbloqueado(i + 1);
             string estado = desbloqueado ? "✅ ¡Desbloqueado!" : "🔒 Bloqueado";
             logrosTexts[i].text = $"{LogrosManager.logrosDescripciones[i]}\n{estado}";
-            logrosTexts[i].color = desbloqueado ? Color.green : Color.gray;
+            logrosTexts[i].color = desbloqueado ? Color.blue : Color.gray;
         }
     }
 }
