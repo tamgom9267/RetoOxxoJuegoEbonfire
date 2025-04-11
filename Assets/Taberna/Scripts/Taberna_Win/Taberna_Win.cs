@@ -7,6 +7,8 @@ public class Taberna_Win : MonoBehaviour
     [SerializeField] Text turnostxt;
     [SerializeField] Text tiempotxt;
 
+    [SerializeField] GameObject logrosPanel;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +19,7 @@ public class Taberna_Win : MonoBehaviour
         float tiempo_total = PlayerPrefs.GetFloat("tiempo_total", 0f);
 
         tiempotxt.text = tiempo_total.ToString("F1"); // muestra 1 decimal
-
+        
     }
 
     // Update is called once per frame
@@ -28,7 +30,11 @@ public class Taberna_Win : MonoBehaviour
 
     public void Logros()
     {
-        SceneManager.LoadScene("Taberna_Logros");
+        logrosPanel.SetActive(true);
+    }
+    public void Volver()
+    {
+        logrosPanel.SetActive(false);
     }
 
     public void GuardarYSalir()
