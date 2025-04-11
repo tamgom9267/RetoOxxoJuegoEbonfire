@@ -41,9 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Taberna_Win.unity
     guid: fd373653c6f3e904b89a666e1582341d
-  - enabled: 1
-    path: Assets/Scenes/Taberna_Logros.unity
-    guid: dd1ec9b1a436e534fa0def687e30b154
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
