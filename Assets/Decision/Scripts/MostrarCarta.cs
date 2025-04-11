@@ -95,6 +95,8 @@ public class MostrarCarta : MonoBehaviour
         if(respuestaUsuario == respuestasCorrectas[indiceActual])
         {
             sfxmanager.RespuestaCorrecta();
+            pointsManager.AddPoints(10f);
+            UpdateStreakText();
             Debug.Log("¡Correcto!");
             if (Random.value <= 0.5f) // 50% de probabilidad
             {

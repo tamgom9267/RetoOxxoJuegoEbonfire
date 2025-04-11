@@ -56,7 +56,7 @@ public class InventoryManagerD : MonoBehaviour
         {
             currentInventory = JsonConvert.DeserializeObject<InventoryItem>(web.downloadHandler.text);
             UpdateInventoryObjects();
-            Debug.Log("Inventory loaded and objects updated");
+            Debug.Log("Inventario cargado");
         }
     }
 

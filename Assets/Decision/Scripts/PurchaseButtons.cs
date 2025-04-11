@@ -49,10 +49,11 @@ public class PurchaseButtons : MonoBehaviour
     // Métodos para comprar items específicos
     public void PurchaseItem1()
     {
-        if (pointsManager.GetCurrentPoints() >= 50)
+        if (!inventoryManager.HasItem(1) && pointsManager.GetCurrentPoints() >= 50)
         {
             pointsManager.ReducePoints(50);
             inventoryManager.PurchaseItem(1);
+            inventoryManager.LoadInventory();
             logrosManager.VerificarLogros(
                 pointsManager.GetCurrentPoints(),
                 streakManager.GetCurrentStreak(),
@@ -63,10 +64,11 @@ public class PurchaseButtons : MonoBehaviour
 
     public void PurchaseItem2()
     {
-        if (pointsManager.GetCurrentPoints() >= 100)
+        if (!inventoryManager.HasItem(2) && pointsManager.GetCurrentPoints() >= 100)
         {
             pointsManager.ReducePoints(100);
             inventoryManager.PurchaseItem(2);
+            inventoryManager.LoadInventory();
             logrosManager.VerificarLogros(
                 pointsManager.GetCurrentPoints(),
                 streakManager.GetCurrentStreak(),
@@ -77,10 +79,11 @@ public class PurchaseButtons : MonoBehaviour
 
     public void PurchaseItem3()
     {
-        if (pointsManager.GetCurrentPoints() >= 150)
+        if (!inventoryManager.HasItem(3) && pointsManager.GetCurrentPoints() >= 150)
         {
             pointsManager.ReducePoints(150);
             inventoryManager.PurchaseItem(3);
+            inventoryManager.LoadInventory();
             logrosManager.VerificarLogros(
                 pointsManager.GetCurrentPoints(),
                 streakManager.GetCurrentStreak(),
@@ -91,10 +94,11 @@ public class PurchaseButtons : MonoBehaviour
 
     public void PurchaseItem4()
     {
-        if (pointsManager.GetCurrentPoints() >= 200)
+        if (!inventoryManager.HasItem(4) && pointsManager.GetCurrentPoints() >= 200)
         {
             pointsManager.ReducePoints(200);
             inventoryManager.PurchaseItem(4);
+            inventoryManager.LoadInventory();
             logrosManager.VerificarLogros(
                 pointsManager.GetCurrentPoints(),
                 streakManager.GetCurrentStreak(),

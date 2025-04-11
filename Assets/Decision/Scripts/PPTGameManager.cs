@@ -12,7 +12,8 @@ public class PPTGameManager : MonoBehaviour
     // Referencias a elementos de UI
     public GameObject pptPanel;    // Panel principal del juego
     public Text resultadoText;     // Texto que muestra el resultado
-    public GameObject boton;       // Botón para cerrar el panel
+    public GameObject botonSalir;       // Botón para cerrar el panel
+    public GameObject botonesJuego;
 
     // Inicialización de componentes
     void Start()
@@ -23,7 +24,8 @@ public class PPTGameManager : MonoBehaviour
         
         // Oculta elementos UI al inicio
         if (pptPanel) pptPanel.SetActive(false);
-        boton.SetActive(false);
+        botonSalir.SetActive(false);
+        botonesJuego.SetActive(true);
     }
 
     // Métodos para manejar las elecciones del jugador (0=Piedra, 1=Papel, 2=Tijera)
@@ -38,6 +40,7 @@ public class PPTGameManager : MonoBehaviour
         if (pptPanel)
         {
             pptPanel.SetActive(true);
+            botonesJuego.SetActive(true);
             if (resultadoText) resultadoText.text = "¡Elige tu jugada!";
         }
     }
@@ -53,28 +56,24 @@ public class PPTGameManager : MonoBehaviour
         if (playerChoice == computerChoice)
         {
             resultado += "¡Empate!";
-            pointsManager.AddPoints(5f);
-            streakManager.IncrementStreak();
-            mostrarCarta.UpdateStreakText();
-            boton.SetActive(true);
+            pointsManager.AddPoints(2f);
+            botonSalir.SetActive(true);
+            botonesJuego.SetActive(false);
         }
         else if ((playerChoice == 0 && computerChoice == 2) || 
                  (playerChoice == 1 && computerChoice == 0) || 
                  (playerChoice == 2 && computerChoice == 1))
         {
             resultado += "¡Ganaste!";
-            streakManager.IncrementStreak();
-            mostrarCarta.UpdateStreakText();
-            pointsManager.AddPoints(10f);
-            boton.SetActive(true);
+            pointsManager.AddPoints(5f);
+            botonSalir.SetActive(true);
+            botonesJuego.SetActive(false);
         }
         else
         {
             resultado += "¡Perdiste!";
-            pointsManager.ReducePoints(5f);
-            streakManager.ResetStreak();
-            mostrarCarta.UpdateStreakText();
-            boton.SetActive(true);
+            botonSalir.SetActive(true);
+            botonesJuego.SetActive(false);
         }
 
         if (resultadoText) resultadoText.text = resultado;
@@ -84,6 +83,7 @@ public class PPTGameManager : MonoBehaviour
     private void CerrarPanel()
     {
         if (pptPanel) pptPanel.SetActive(false);
-        boton.SetActive(false);
+        botonSalir.SetActive(false);
+        botonesJuego.SetActive(false);
     }
 }

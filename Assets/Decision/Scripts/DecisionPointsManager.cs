@@ -17,7 +17,7 @@ public class DecisionPointsManager : MonoBehaviour
     // Inicialización y carga de puntos
     void Start()
     {
-        userId = 1;
+        userId = PlayerPrefs.GetInt("UserId");
         streakManager = FindFirstObjectByType<StreakManagerD>();
         StartCoroutine(LoadPoints());
         UpdatePointsText();
@@ -92,7 +92,7 @@ public class DecisionPointsManager : MonoBehaviour
     {
         if(pointsText != null)
         {
-            pointsText.text = $"Puntos: {currentPoints}";
+            pointsText.text = $"{currentPoints}";
             LeanTween.cancel(pointsText.gameObject);
             pointsText.transform.localScale = Vector3.one * 1.2f;
             LeanTween.scale(pointsText.gameObject, Vector3.one, 0.3f)
