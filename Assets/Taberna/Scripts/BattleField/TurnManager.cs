@@ -55,6 +55,12 @@ public class TurnManager : MonoBehaviour
     {
         gameTimer += Time.deltaTime;
         PlayerPrefs.SetFloat("tiempo_total", gameTimer);
+
+        if (playerHealth < playerMaxHealth/2)
+        {
+            PlayerPrefs.SetInt("logro_taberna_vida", 0);
+            Debug.Log("Logro cancelado: vida bajó del 50%");
+        }
     }
 
 

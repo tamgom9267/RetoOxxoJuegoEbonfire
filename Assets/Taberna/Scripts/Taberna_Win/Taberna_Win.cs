@@ -20,6 +20,21 @@ public class Taberna_Win : MonoBehaviour
 
         tiempotxt.text = tiempo_total.ToString("F1"); // muestra 1 decimal
         
+        //  Verificar logro: menos de 20 turnos
+        if (turnos_jugador < 20)
+        {
+            PlayerPrefs.SetInt("logro_taberna_turnos", 1);
+            Debug.Log(" Logro activado: menos de 20 turnos");
+        }
+
+        //  Verificar logro: menos de 300 segundos
+        if (tiempo_total < 300f)
+        {
+            PlayerPrefs.SetInt("logro_taberna_tiempo", 1);
+            Debug.Log(" Logro activado: menos de 300 segundos");
+        }
+
+        PlayerPrefs.Save(); // Guarda los cambios
     }
 
     // Update is called once per frame

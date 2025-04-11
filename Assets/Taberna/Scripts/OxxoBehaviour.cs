@@ -61,6 +61,9 @@ public class OxxoBehaviour : MonoBehaviour
             PlayerPrefs.GetInt("objeto_Milk", 0) == 1 &&
             PlayerPrefs.GetInt("objeto_Chips", 0) == 1)
         {
+            PlayerPrefs.SetInt("logro_taberna_completo", 1);
+            PlayerPrefs.Save();
+            Debug.Log("🏆 Logro activado: juego completado al 100%");
             SceneManager.LoadScene("Taberna_Win");
         }
     }
