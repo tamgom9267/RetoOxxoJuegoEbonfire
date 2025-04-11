@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Clase principal que controla el estado del juego
+// Controlador principal del juego que maneja el estado global
 public class GameControllD : MonoBehaviour
 {
-    public int timeToWin = 70;                     // Tiempo límite para ganar
-    public static GameControllD Instance;          // Instancia única
-    public UIControllD uiController;               // Referencia al controlador de UI
+    public int timeToWin = 70;                // Tiempo límite para ganar
+    public static GameControllD Instance;     
+    public UIControllD uiController;          // Referencia al controlador de UI
     
+    // Inicialización y configuración inicial
     void Awake()
     {
         Instance = this;
@@ -15,9 +16,9 @@ public class GameControllD : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
     
+    // Inicia el temporizador si existe el controlador de UI
     void Start()
     {
-        // Inicia el temporizador si existe el controlador de UI
         if(uiController != null)
         {
             uiController.StartTimer();

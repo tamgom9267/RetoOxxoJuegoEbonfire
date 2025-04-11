@@ -13,8 +13,8 @@ public class LogrosManager : MonoBehaviour
     StreakManagerD streakManager;
 
     public static string[] logrosDescripciones = new string[] {
-        "¡Primera Victoria!",
-        "Racha de 3 victorias",
+        "¡Primeros Puntos!",
+        "Racha de 3",
         "Comprar primer item",
         "Acumular 500 puntos"
     };
@@ -25,22 +25,18 @@ public class LogrosManager : MonoBehaviour
         StartCoroutine(LoadLogrosAndVerify());
     }
 
-        private IEnumerator LoadLogrosAndVerify()
+    private IEnumerator LoadLogrosAndVerify()
     {
         yield return StartCoroutine(LoadLogros());
         
         // Verificar logros después de cargarlos
         pointsManager = FindFirstObjectByType<DecisionPointsManager>();
         streakManager = FindFirstObjectByType<StreakManagerD>();
-        
-        if (pointsManager != null && streakManager != null)
-        {
             VerificarLogros(
                 pointsManager.GetCurrentPoints(),
                 streakManager.GetCurrentStreak(),
                 false
             );
-        }
     }
 
     public void DesbloquearLogro(int numeroLogro)
@@ -123,7 +119,6 @@ public class LogrosManager : MonoBehaviour
     }
 }
 
-[Serializable]
 public class LogrosData
 {
     public bool logro_dec1;

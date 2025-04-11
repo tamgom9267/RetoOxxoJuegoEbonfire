@@ -4,31 +4,31 @@ using System;
 using UnityEngine.Networking;
 using System.Collections;
 using Newtonsoft.Json;
-
-// Clase que maneja el sistema de puntos del juego y su sincronización con el servidor
+//s
+// Gestor del sistema de puntos y su sincronización con el servidor
 public class DecisionPointsManager : MonoBehaviour
 {
-    private const string API_URL = "https://localhost:7220/DecisionPoints"; // URL del servidor
-    private float currentPoints;                                              // Puntos actuales
-    private StreakManagerD streakManager;                                     // Gestor de rachas
-    private int userId;                                                       // ID del usuario
-    public Text pointsText;                                                  // Texto UI para mostrar puntos
+    private const string API_URL = "https://localhost:7220/DecisionPoints";
+    private float currentPoints;                // Puntos actuales
+    private StreakManagerD streakManager;       // Gestor de rachas
+    private int userId;                         // ID del usuario
+    public Text pointsText;                    // Texto UI para puntos
 
+    // Inicialización y carga de puntos
     void Start()
     {
-        userId = 1; // ID de usuario hardcodeado
+        userId = 1;
         streakManager = FindFirstObjectByType<StreakManagerD>();
-        StartCoroutine(LoadPoints());    // Carga puntos del servidor
-        UpdatePointsText();              // Actualiza UI
+        StartCoroutine(LoadPoints());
+        UpdatePointsText();
     }
 
     // Añade puntos considerando el multiplicador por racha
     public void AddPoints(float points)
     {
         float multiplier = CalculateMultiplier();
-        currentPoints += points * multiplier;
         float newPoints = currentPoints + (points * multiplier);
-        currentPoints = Mathf.Min(newPoints, 1000f);  // Límite máximo de 1000 puntos
+        currentPoints = Mathf.Min(newPoints, 1000f);
         UpdatePointsText();
         StartCoroutine(SavePoints());
     }
@@ -37,9 +37,9 @@ public class DecisionPointsManager : MonoBehaviour
     private float CalculateMultiplier()
     {
         int streak = streakManager.GetCurrentStreak();
-        if (streak >= 5) return 2.0f;    // x2 para rachas de 5+
-        if (streak >= 3) return 1.5f;    // x1.5 para rachas de 3-4
-        return 1.0f;                     // Sin multiplicador
+        if (streak >= 5) return 2.0f;
+        if (streak >= 3) return 1.5f;
+        return 1.0f;
     }
 
     // Guarda los puntos en el servidor
@@ -84,19 +84,23 @@ public class DecisionPointsManager : MonoBehaviour
         }
     }
 
-    // Getters y setters
+    // Obtiene los puntos actuales
     public float GetCurrentPoints() { return currentPoints; }
 
-    // Actualiza el texto UI de puntos
+    // Actualiza el texto UI de puntos con animación
     private void UpdatePointsText()
     {
         if(pointsText != null)
         {
             pointsText.text = $"Puntos: {currentPoints}";
+            LeanTween.cancel(pointsText.gameObject);
+            pointsText.transform.localScale = Vector3.one * 1.2f;
+            LeanTween.scale(pointsText.gameObject, Vector3.one, 0.3f)
+                .setEase(LeanTweenType.easeOutElastic);
         }
     }
 
-    // Reduce puntos (por ejemplo, al comprar items)
+    // Reduce puntos
     public void ReducePoints(float points)
     {
         currentPoints = Mathf.Max(0, currentPoints - points);
@@ -105,6 +109,7 @@ public class DecisionPointsManager : MonoBehaviour
     }
 }
 
+// Estructura de datos para los puntos
 public class DecisionPointsData
 {
     public float points;

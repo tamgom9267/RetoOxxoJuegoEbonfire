@@ -4,41 +4,41 @@ using UnityEngine.Networking;
 using System.Collections;
 using Newtonsoft.Json;
 
-// Clase que gestiona el inventario del jugador, permitiendo cargar, actualizar y verificar items
+// Clase que gestiona el inventario del jugador y su sincronización con el servidor
 public class InventoryManagerD : MonoBehaviour
 {
-    // Instancia única para acceder desde otros scripts
+    // Singleton para acceso global
     public static InventoryManagerD Instance { get; private set; }
     
-    // URL base de la API para gestionar el inventario
+    // Configuración de API
     private const string API_URL = "https://localhost:7220/Inventory";
     private int userId;
     public InventoryItem currentInventory;
 
-    // Referencias a los objetos que representan items en el juego
+    // Referencias a objetos del inventario en el juego
     public GameObject item1Object;
     public GameObject item2Object;
     public GameObject item3Object;
     public GameObject item4Object;
 
-    // Clase que define la estructura de datos del inventario
-    [Serializable]
+    // Estructura de datos del inventario
     public class InventoryItem
     {
-        private int userId;      // ID del usuario
-        public bool item_1;     // Estado del item 1
-        public bool item_2;     // Estado del item 2
-        public bool item_3;     // Estado del item 3
-        public bool item_4;     // Estado del item 4
+        private int userId;   // ID del usuario
+        public bool item_1;   // Estado del item 1
+        public bool item_2;   // Estado del item 2
+        public bool item_3;   // Estado del item 3
+        public bool item_4;   // Estado del item 4
     }
 
+    // Inicialización y carga del inventario
     void Start()
     {
         userId = PlayerPrefs.GetInt("UserId");
         StartCoroutine(LoadInventory());
     }
 
-    // Carga el inventario del jugador desde la API
+    // Carga el inventario desde el servidor
     public IEnumerator LoadInventory()
     {
         string JSONurl = $"{API_URL}/{userId}";
@@ -60,13 +60,13 @@ public class InventoryManagerD : MonoBehaviour
         }
     }
 
-    // Método para comprar un item específico
+    // Método para comprar un item
     public void PurchaseItem(int itemNumber)
     {
         StartCoroutine(UpdateItem(itemNumber, true));
     }
 
-    // Actualiza el estado de un item en la API
+    // Actualiza el estado de un item en el servidor
     private IEnumerator UpdateItem(int itemNumber, bool value)
     {
         string JSONurl = $"{API_URL}/{userId}/{itemNumber}";
