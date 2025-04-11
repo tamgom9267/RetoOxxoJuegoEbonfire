@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class TurnManager : MonoBehaviour
 {
+// Mathf.Clamp (valor, min, max)
+
     // Enum para distinguir el turno actual entre jugador y enemigo
     public enum Turn { Player, Enemy }
     public Turn currentTurn;
@@ -268,7 +270,7 @@ public class TurnManager : MonoBehaviour
     {
         float r = Random.value * 100f;
         if (r < 60f) return 1;
-        else if (r < 99f) return 2;
+        else if (r < 90f) return 2;
         else return 3;
     }
 
