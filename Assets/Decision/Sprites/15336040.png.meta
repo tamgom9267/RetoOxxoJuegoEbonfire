@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2e2c5726e2c73f948bbbdc1ef9b3abe2
+guid: 661cb8026828b1641a20033ea42d1533
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7766721758921934520
-    second: scissors_0
+      213: -7374757887716631624
+    second: 15336040_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: scissors_0
+      name: 15336040_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 12
-        width: 423
-        height: 423
+        x: 47
+        y: 47
+        width: 418
+        height: 418
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b6c6d53a40f8cb60800000000000000
-      internalID: 7766721758921934520
+      spriteID: 8bbd32636c897a990800000000000000
+      internalID: -7374757887716631624
       vertices: []
       indices: 
       edges: []
