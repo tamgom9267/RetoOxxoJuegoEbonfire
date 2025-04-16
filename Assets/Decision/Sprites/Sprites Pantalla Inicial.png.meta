@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 0d1a620e84ac22e4e928200427dd18a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6465002184608526955
+    second: Sprites Pantalla Inicial_0
+  - first:
+      213: -6641382646266438817
+    second: Sprites Pantalla Inicial_1
+  - first:
+      213: 5621088376451903338
+    second: Sprites Pantalla Inicial_2
+  - first:
+      213: -2499896605885872299
+    second: Sprites Pantalla Inicial_3
+  - first:
+      213: -4531818071030919517
+    second: Sprites Pantalla Inicial_4
+  - first:
+      213: 6366510307920367196
+    second: Sprites Pantalla Inicial_5
+  - first:
+      213: 3912808744702591174
+    second: Sprites Pantalla Inicial_6
+  - first:
+      213: -7140497424447768669
+    second: Sprites Pantalla Inicial_7
+  - first:
+      213: 3912497342948678735
+    second: Sprites Pantalla Inicial_8
+  - first:
+      213: -9143167274786150116
+    second: Sprites Pantalla Inicial_9
+  - first:
+      213: -776279269272838675
+    second: Sprites Pantalla Inicial_10
+  - first:
+      213: -8458216616259549467
+    second: Sprites Pantalla Inicial_11
+  - first:
+      213: 6988632264686925048
+    second: Sprites Pantalla Inicial_12
+  - first:
+      213: -1972657596125933669
+    second: Sprites Pantalla Inicial_13
+  - first:
+      213: -5263155500095292705
+    second: Sprites Pantalla Inicial_14
+  - first:
+      213: -6208291159427556996
+    second: Sprites Pantalla Inicial_15
+  - first:
+      213: 3558939407835741601
+    second: Sprites Pantalla Inicial_16
+  - first:
+      213: -3076469226377807797
+    second: Sprites Pantalla Inicial_17
+  - first:
+      213: -544988357954258280
+    second: Sprites Pantalla Inicial_18
+  - first:
+      213: -6470870167104252940
+    second: Sprites Pantalla Inicial_19
+  - first:
+      213: -3091859523665778350
+    second: Sprites Pantalla Inicial_20
+  - first:
+      213: -7999305423469057218
+    second: Sprites Pantalla Inicial_21
+  - first:
+      213: 3877144698881457687
+    second: Sprites Pantalla Inicial_22
+  - first:
+      213: -4364344843195270413
+    second: Sprites Pantalla Inicial_23
+  - first:
+      213: 6058834696315461481
+    second: Sprites Pantalla Inicial_24
+  - first:
+      213: 1846173172335905307
+    second: Sprites Pantalla Inicial_25
+  - first:
+      213: 4523834063352910021
+    second: Sprites Pantalla Inicial_26
+  - first:
+      213: -4291268915865522495
+    second: Sprites Pantalla Inicial_27
+  - first:
+      213: 3996881855260042808
+    second: Sprites Pantalla Inicial_28
+  - first:
+      213: -6078443995747499627
+    second: Sprites Pantalla Inicial_29
+  - first:
+      213: 3734483137156878274
+    second: Sprites Pantalla Inicial_30
+  - first:
+      213: -4994511150069463834
+    second: Sprites Pantalla Inicial_31
+  - first:
+      213: 2538692633430037207
+    second: Sprites Pantalla Inicial_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprites Pantalla Inicial_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 416
+        width: 327
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b58d7bba115d3a0800000000000000
+      internalID: -6641382646266438817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Pantalla Inicial_27
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 751
+        width: 866
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cee82a38a95274c0800000000000000
+      internalID: -4291268915865522495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Pantalla Inicial_28
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 119
+        width: 359
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836aaf7fed6c77730800000000000000
+      internalID: 3996881855260042808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Pantalla Inicial_29
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 425
+        width: 775
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 1, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5914d5e046705aba0800000000000000
+      internalID: -6078443995747499627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Pantalla Inicial_30
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 103
+        width: 267
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf0ce980ac83d330800000000000000
+      internalID: 3734483137156878274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Pantalla Inicial_31
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 114
+        width: 521
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4c161329eefaab0800000000000000
+      internalID: -4994511150069463834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Pantalla Inicial_32
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 439
+        width: 283
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d29f71ef7f3b3320800000000000000
+      internalID: 2538692633430037207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ec08a727e248b9943ad8bd55d0bf4bcd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sprites Pantalla Inicial_0: 125878265
+      Sprites Pantalla Inicial_1: -6641382646266438817
+      Sprites Pantalla Inicial_10: -776279269272838675
+      Sprites Pantalla Inicial_11: -8458216616259549467
+      Sprites Pantalla Inicial_12: 6988632264686925048
+      Sprites Pantalla Inicial_13: -1972657596125933669
+      Sprites Pantalla Inicial_14: -5263155500095292705
+      Sprites Pantalla Inicial_15: -6208291159427556996
+      Sprites Pantalla Inicial_16: 3558939407835741601
+      Sprites Pantalla Inicial_17: -3076469226377807797
+      Sprites Pantalla Inicial_18: -544988357954258280
+      Sprites Pantalla Inicial_19: -6470870167104252940
+      Sprites Pantalla Inicial_2: 5621088376451903338
+      Sprites Pantalla Inicial_20: -3091859523665778350
+      Sprites Pantalla Inicial_21: -7999305423469057218
+      Sprites Pantalla Inicial_22: 3877144698881457687
+      Sprites Pantalla Inicial_23: -4364344843195270413
+      Sprites Pantalla Inicial_24: 6058834696315461481
+      Sprites Pantalla Inicial_25: 1846173172335905307
+      Sprites Pantalla Inicial_26: 4523834063352910021
+      Sprites Pantalla Inicial_27: -4291268915865522495
+      Sprites Pantalla Inicial_28: 3996881855260042808
+      Sprites Pantalla Inicial_29: -6078443995747499627
+      Sprites Pantalla Inicial_3: -2499896605885872299
+      Sprites Pantalla Inicial_30: 3734483137156878274
+      Sprites Pantalla Inicial_31: -4994511150069463834
+      Sprites Pantalla Inicial_32: 2538692633430037207
+      Sprites Pantalla Inicial_4: -4531818071030919517
+      Sprites Pantalla Inicial_5: 6366510307920367196
+      Sprites Pantalla Inicial_6: 3912808744702591174
+      Sprites Pantalla Inicial_7: -7140497424447768669
+      Sprites Pantalla Inicial_8: 3912497342948678735
+      Sprites Pantalla Inicial_9: -9143167274786150116
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

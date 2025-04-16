@@ -4,7 +4,7 @@ using System;
 using UnityEngine.Networking;
 using System.Collections;
 using Newtonsoft.Json;
-//s
+
 // Gestor del sistema de puntos y su sincronización con el servidor
 public class DecisionPointsManager : MonoBehaviour
 {

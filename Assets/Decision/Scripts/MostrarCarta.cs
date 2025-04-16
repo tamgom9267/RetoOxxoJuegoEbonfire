@@ -48,13 +48,13 @@ public class MostrarCarta : MonoBehaviour
         UpdateStreakText();
     }
 
-    // Maneja el clic en el botón "Verdadero"
+    // Maneja el clic en el botón "Visita Presencial"
     public void OnBotonVerdaderoClick()
     {
         VerificarRespuesta(true);
     }
 
-    // Maneja el clic en el botón "Falso"
+    // Maneja el clic en el botón "Visita Virtual"
     public void OnBotonFalsoClick()
     {
         VerificarRespuesta(false);
