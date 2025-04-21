@@ -51,7 +51,6 @@ public class LogrosManager : MonoBehaviour
     private void MostrarLogro(int numeroLogro)
     {
         Debug.Log($"¡Logro Desbloqueado: {logrosDescripciones[numeroLogro - 1]}!");
-        // Aquí puedes agregar efectos visuales o sonidos
     }
 
     public void VerificarLogros(float puntos, int racha, bool compraRealizada)

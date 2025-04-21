@@ -7,7 +7,6 @@ using Newtonsoft.Json;
 // Clase que gestiona el inventario del jugador y su sincronización con el servidor
 public class InventoryManagerD : MonoBehaviour
 {
-    // Singleton para acceso global
     public static InventoryManagerD Instance { get; private set; }
     
     // Configuración de API
