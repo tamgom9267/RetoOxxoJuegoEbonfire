@@ -34,6 +34,9 @@ public class LoginController : MonoBehaviour
         PlayerPrefs.SetString("Username", username);
         PlayerPrefs.SetString("Nombre", nombre);
         PlayerPrefs.Save();
+
+        // Marcar que el juego fue iniciado por primera vez
+        PlayerPrefs.SetInt("JuegoIniciado", 1);
         
         SceneManager.LoadScene("Taberna Scene");
     }
