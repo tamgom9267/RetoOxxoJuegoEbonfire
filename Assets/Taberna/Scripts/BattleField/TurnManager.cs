@@ -21,6 +21,8 @@ public class TurnManager : MonoBehaviour
     [SerializeField] private int playerHealth; // Vida actual del jugador
     private bool playerIsDead = false; // Si el jugador está muerto
 
+    private int logroTaberna;
+
     // ===== CONFIGURACIÓN DEL ENEMIGO =====
     [Header("Enemigo")]
     [SerializeField] private int enemyMaxHealth = 7; // Vida máxima del enemigo
@@ -64,9 +66,10 @@ public class TurnManager : MonoBehaviour
     {
         gameTimer += Time.deltaTime; // Sumar tiempo
         PlayerPrefs.SetFloat("tiempo_total", gameTimer); // Guardarlo continuamente
+        logroTaberna = PlayerPrefs.GetInt("logro_taberna_vida", 1);
 
         // Cancelar logro si la vida del jugador cae por debajo del 50%
-        if (playerHealth < playerMaxHealth / 2)
+        if ((playerHealth < playerMaxHealth / 2) && (logroTaberna != 0))
         {
             PlayerPrefs.SetInt("logro_taberna_vida", 0);
             Debug.Log("Logro cancelado: vida bajó del 50%");

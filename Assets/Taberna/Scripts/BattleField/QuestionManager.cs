@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using UnityEngine.Networking;
 
 public class QuestionManager : MonoBehaviour
 {
@@ -12,55 +14,17 @@ public class QuestionManager : MonoBehaviour
     public Text textC;
     public Text textD;
 
-    private List<Question> easyQuestions;
-    private List<Question> hardQuestions;
+    public PreguntasTabernaGet apiFacil;
+    public PreguntasTabernaGet apiDificil;
 
     private bool isHardQuestion;
-    private Question currentQuestion;
+    private PreguntaTaberna currentQuestion;
     private TurnManager turnManager;
     private bool isHealing;
 
     void Start()
     {
-        questionPanel.SetActive(false); // Ocultar el panel al inicio
-
-        easyQuestions = new List<Question>
-        {
-            new Question {
-                questionText = "¿Cuánto es 5 + 3?",
-                options = new string[] { "7", "8", "9", "10" },
-                correctIndex = 1
-            },
-            new Question {
-                questionText = "¿Cuánto es 6 - 2?",
-                options = new string[] { "2", "3", "4", "5" },
-                correctIndex = 2
-            },
-            new Question {
-                questionText = "¿Cuánto es 9 ÷ 3?",
-                options = new string[] { "1", "2", "3", "4" },
-                correctIndex = 2
-            }
-        };
-
-        hardQuestions = new List<Question>
-        {
-            new Question {
-                questionText = "¿Cuánto es (3^2) + (2^3)?",
-                options = new string[] { "15", "17", "13", "11" },
-                correctIndex = 0
-            },
-            new Question {
-                questionText = "¿Cuál es la raíz cuadrada de 81?",
-                options = new string[] { "8", "9", "10", "11" },
-                correctIndex = 1
-            },
-            new Question {
-                questionText = "¿Cuánto es 7 × (4 + 2)?",
-                options = new string[] { "42", "38", "48", "44" },
-                correctIndex = 0
-            }
-        };
+        questionPanel.SetActive(false);
     }
 
     public void ShowQuestion(TurnManager manager, bool useHard, bool healing = false)
@@ -69,29 +33,36 @@ public class QuestionManager : MonoBehaviour
         isHealing = healing;
         isHardQuestion = useHard;
 
-        List<Question> pool = useHard ? hardQuestions : easyQuestions;
+        List<PreguntaTaberna> pool = useHard ? apiDificil.preguntas : apiFacil.preguntas;
+
+        if (pool.Count == 0)
+        {
+            Debug.LogWarning("No hay preguntas cargadas desde la API.");
+            return;
+        }
+
         currentQuestion = pool[Random.Range(0, pool.Count)];
 
         // Actualizar UI
-        questionText.text = currentQuestion.questionText;
-        textA.text = currentQuestion.options[0];
-        textB.text = currentQuestion.options[1];
-        textC.text = currentQuestion.options[2];
-        textD.text = currentQuestion.options[3];
+        questionText.text = currentQuestion.pregunta;
+        textA.text = currentQuestion.respuesta1;
+        textB.text = currentQuestion.respuesta2;
+        textC.text = currentQuestion.respuesta3;
+        textD.text = currentQuestion.respuesta4;
 
         questionPanel.SetActive(true);
     }
 
     // Asignar estas funciones en el Inspector a cada botón
-    public void AnswerA() { Answer(0); }
-    public void AnswerB() { Answer(1); }
-    public void AnswerC() { Answer(2); }
-    public void AnswerD() { Answer(3); }
+    public void AnswerA() { Answer(currentQuestion.respuesta1); }
+    public void AnswerB() { Answer(currentQuestion.respuesta2); }
+    public void AnswerC() { Answer(currentQuestion.respuesta3); }
+    public void AnswerD() { Answer(currentQuestion.respuesta4); }
 
-    private void Answer(int index)
+    private void Answer(string seleccion)
     {
-        bool correct = index == currentQuestion.correctIndex;
+        bool correcta = seleccion.Trim().ToLower() == currentQuestion.respuestaCorrecta.Trim().ToLower();
         questionPanel.SetActive(false);
-        turnManager.ReceiveAnswer(correct, isHealing, isHardQuestion);
+        turnManager.ReceiveAnswer(correcta, isHealing, isHardQuestion);
     }
 }
