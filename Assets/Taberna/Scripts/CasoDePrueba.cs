@@ -8,13 +8,13 @@ public class CasoDePrueba : MonoBehaviour
         // Opción 1: Ctrl + 1
         if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Alpha1))
         {
-            ActivarDebug(127.53f, 15, 5);
+            ActivarDebug(427.53f, 23, 5);
         }
 
         // Opción 2: Ctrl + 2
         if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Alpha2))
         {
-            ActivarDebug(45.31f, 6, 16);
+            ActivarDebug(175.31f, 8, 16);
         }
     }
 
