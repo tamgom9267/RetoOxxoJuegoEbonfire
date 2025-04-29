@@ -11,7 +11,7 @@ public class LogrosTabernaGet : MonoBehaviour
     [SerializeField] private GameObject logro3Panel;
     [SerializeField] private GameObject logro4Panel;
 
-    private string apiUrl = "https://localhost:7220/LogrosControllerTaberna";
+    private string apiUrl = "https://apideploy-a00838689.replit.app/LogrosControllerTaberna";
 
     void Start()
     {

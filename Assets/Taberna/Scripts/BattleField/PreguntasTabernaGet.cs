@@ -12,7 +12,7 @@ public class PreguntasTabernaGet : MonoBehaviour
     public Dificultad dificultad = Dificultad.Facil;
 
     [HideInInspector] public List<PreguntaTaberna> preguntas = new();
-    private string apiUrl = "https://localhost:7220/PreguntasTaberna";
+    private string apiUrl = "https://apideploy-a00838689.replit.app/PreguntasTaberna";
 
     void Start()
     {

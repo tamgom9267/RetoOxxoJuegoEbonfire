@@ -9,7 +9,7 @@ public class LogrosTabernaManager : MonoBehaviour
     private int logroTurnos;
     private int logroVida;
 
-    private string apiUrl = "https://localhost:7220/LogrosControllerTaberna";
+    private string apiUrl = "https://apideploy-a00838689.replit.app/LogrosControllerTaberna";
 
     void Start()
     {

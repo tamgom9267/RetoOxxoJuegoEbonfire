@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 public class TabernaGetAPI : MonoBehaviour
 {
-    private string apiUrl = "https://localhost:7220/Taberna";
+    private string apiUrl = "https://apideploy-a00838689.replit.app/Taberna";
 
     public int turnosPrevios;
     public TimeSpan tiempoPrevio;
