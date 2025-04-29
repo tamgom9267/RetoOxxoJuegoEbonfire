@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1098766135}
         m_TargetAssemblyTypeName: LoginController, Assembly-CSharp
-        m_MethodName: GoToDecision
+        m_MethodName: GoToLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

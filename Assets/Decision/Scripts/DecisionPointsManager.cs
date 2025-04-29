@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 // Gestor del sistema de puntos y su sincronización con el servidor
 public class DecisionPointsManager : MonoBehaviour
 {
-    private const string API_URL = "https://localhost:7220/DecisionPoints";
+    private const string API_URL = "https://apideploy-a00838689.replit.app/DecisionPoints";
     private float currentPoints;                // Puntos actuales
     private StreakManagerD streakManager;       // Gestor de rachas
     private int userId;                         // ID del usuario

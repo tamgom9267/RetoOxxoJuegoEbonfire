@@ -15,7 +15,7 @@ public class MostrarCarta : MonoBehaviour
     private SFXManager sfxmanager;
     private List<Pregunta> preguntas;
     private Pregunta preguntaActual;
-    private const string API_URL = "https://localhost:7220/Preguntas";
+    private const string API_URL = "https://apideploy-a00838689.replit.app/Preguntas";
 
     void Start()
     {
@@ -104,6 +104,9 @@ public class MostrarCarta : MonoBehaviour
                 {
                     pptGame.PlayGame();
                     textPanel.SetActive(false);
+                    streakManager.IncrementStreak();
+                    UpdateStreakText();
+                    pointsManager.AddPoints(10f);
                 }
             }
             else 

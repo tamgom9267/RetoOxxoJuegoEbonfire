@@ -223,7 +223,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Objetos PPT_0: 5965865025189234321
+      Objetos PPT_1: 7440169402782263220
+      Objetos PPT_2: -2628380980420532701
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

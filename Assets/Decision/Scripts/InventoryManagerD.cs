@@ -10,7 +10,7 @@ public class InventoryManagerD : MonoBehaviour
     public static InventoryManagerD Instance { get; private set; }
     
     // Configuración de API
-    private const string API_URL = "https://localhost:7220/Inventory";
+    private const string API_URL = "https://apideploy-a00838689.replit.app/Inventory";
     private int userId;
     public InventoryItem currentInventory;
 

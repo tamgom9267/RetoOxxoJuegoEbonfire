@@ -3,12 +3,11 @@ using System;
 using UnityEngine.Networking;
 using System.Collections;
 using Newtonsoft.Json;
-using Unity.Android.Gradle.Manifest;
 
 // Gestor del sistema de rachas y su sincronización con el servidor
 public class StreakManagerD : MonoBehaviour
 {
-    private const string API_URL = "https://localhost:7220/Streaks";
+    private const string API_URL = "https://apideploy-a00838689.replit.app/Streaks";
     public int currentStreak;   // Racha actual del jugador
     private int userId;         // ID del usuario
     LogrosManager logros;
