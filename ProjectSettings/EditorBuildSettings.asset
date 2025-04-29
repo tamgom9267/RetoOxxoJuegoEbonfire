@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameSceneDecision.unity
     guid: b7705fff9e3571c4fb49f47e889b1547
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/InventarioScene.unity
     guid: 8e6a2b2993f36f441b3d8ed56295f36c
   - enabled: 1

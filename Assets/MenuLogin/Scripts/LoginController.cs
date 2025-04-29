@@ -13,6 +13,11 @@ public class LoginController : MonoBehaviour
         SceneManager.LoadScene("MenuScene");
     }
 
+    public void GoToLogin()
+    {
+        SceneManager.LoadScene("LoginScene");
+    }
+
     public void GoToLaberinto()
     {
         SceneManager.LoadScene("LaberintoScene");

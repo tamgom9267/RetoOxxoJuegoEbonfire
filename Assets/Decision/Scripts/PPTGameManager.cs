@@ -14,6 +14,7 @@ public class PPTGameManager : MonoBehaviour
     public Text resultadoText;     // Texto que muestra el resultado
     public GameObject botonSalir;       // Botón para cerrar el panel
     public GameObject botonesJuego;
+    public GameObject PPTP;
 
     // Inicialización de componentes
     void Start()
@@ -41,6 +42,7 @@ public class PPTGameManager : MonoBehaviour
         {
             pptPanel.SetActive(true);
             botonesJuego.SetActive(true);
+            PPTP.SetActive(true);
             if (resultadoText) resultadoText.text = "¡Elige tu jugada!";
         }
     }
@@ -59,6 +61,7 @@ public class PPTGameManager : MonoBehaviour
             pointsManager.AddPoints(2f);
             botonSalir.SetActive(true);
             botonesJuego.SetActive(false);
+            PPTP.SetActive(false);
         }
         else if ((playerChoice == 0 && computerChoice == 2) || 
                  (playerChoice == 1 && computerChoice == 0) || 
@@ -68,12 +71,14 @@ public class PPTGameManager : MonoBehaviour
             pointsManager.AddPoints(5f);
             botonSalir.SetActive(true);
             botonesJuego.SetActive(false);
+            PPTP.SetActive(false);
         }
         else
         {
             resultado += "¡Perdiste!";
             botonSalir.SetActive(true);
             botonesJuego.SetActive(false);
+            PPTP.SetActive(false);
         }
 
         if (resultadoText) resultadoText.text = resultado;

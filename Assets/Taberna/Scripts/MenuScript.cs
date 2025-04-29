@@ -21,7 +21,6 @@ public class MenuScript : MonoBehaviour
     }
 
     public void ExitGame() {    //Salir de la aplicacion
-        UnityEditor.EditorApplication.isPlaying = false;
         //Application.Quit();
     }
 }

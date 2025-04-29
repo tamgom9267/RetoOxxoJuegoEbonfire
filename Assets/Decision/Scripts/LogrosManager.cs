@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 public class LogrosManager : MonoBehaviour
 {
-    private const string API_URL = "https://localhost:7220/Logros";
+    private const string API_URL = "https://apideploy-a00838689.replit.app/Logros";
     private int userId;
     private bool[] logrosDesbloqueados = new bool[4];
     DecisionPointsManager pointsManager;
